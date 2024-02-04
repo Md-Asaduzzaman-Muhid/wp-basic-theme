@@ -1,0 +1,65 @@
+//very big device more than 1400px
+@media (max-width: 1399.98px) {
+
+}
+//very big device more than 1400px
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+
+}
+// (desktops, less than 1200px)
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+    .header-menu ul li a {
+        font-size: 10px;
+    }
+}
+//(tablets, less than 992px)
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { 
+    .consult-more img {
+        top: 30px;
+    }
+    .slider-section.mobile{
+        display: block;
+    }
+    .slider-section.big{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .consulting-section .icon {
+        left: 20px;
+    }
+    .counter-section {
+        margin-top: 0;
+    }
+    .footer-title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }    
+    .process-single{
+        text-align: center;
+    }
+    .process-single .icon img{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+//(landscape phones, less than 768px)
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
+
+}
+//(portrait phones, less than 576px)
+
+//(very small device less then 480px)
+@media (max-width: 480px) { 
+
+}
+//(very small device less then 480px)
