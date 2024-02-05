@@ -6,19 +6,10 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="header">
-	<div class="header-top bg-dark">
+	<div class="header-top bg-dark py-3">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					
-				</div>
-				<div class="col-md-3">
-					<div class="promo h-100 d-flex justify-content-start align-items-center">
-						<p><?php echo get_option('haslo_firmy1')?? "Email Us" ?><br>
-						<?php echo get_option('haslo_firmy2')?? "call us" ?></p>
-					</div>
-				</div>
-				<div class="col-md-3">
+				<div class="col-md-12 text-right">
 				<ul class="text-right social-link m-0 p-0 h-100">
 						<li class="wow zoomIn list-inline-item">
 							<a href="mailto:<?php echo get_option('mail') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/icons/mail.png" alt="mail"></a>
@@ -28,15 +19,14 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.png" alt="facebook">
 							</a>
 						</li>
-						<li><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div class="header-menu">
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
+	<div class="header-menu ">
+		<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
 			<div class="container">
 				<div class="logo wow bounceInDown">
 					<a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>">
