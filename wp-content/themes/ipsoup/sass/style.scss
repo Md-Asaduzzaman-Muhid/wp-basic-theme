@@ -1,15 +1,14 @@
 // ----- zmienne bootstrapa i moje -----
-$fa-font-path: 'resources/fonts';
+// $fa-font-path: 'resources/fonts';
 // $menu-mobile-breakpoint: 'md';
 // $menu-show-arrows-breakpoint: 'xl';
-$menu_arrows: true;
+// $menu_arrows: true;
 
 // ----- import gotowców -----
 @import "_fonts";
 
-@import "libraries/_bootstrap";
-@import "libraries/_fontawesome";
-@import "libraries/_hovermaster";
+
+// @import "libraries/_hovermaster";
 
 @import "custom/_variable";
 @import "custom/_common";
@@ -26,7 +25,7 @@ $menu_arrows: true;
 // @import "stylebase/_customs";
 // @import "stylebase/_gallery";
 // @import "stylebase/_menu";
-@import "stylebase/_anima";
+// @import "stylebase/_anima";
 // @import "stylebase/_extgrid";
 // @import "stylebase/_contactforms";
 // @import "stylebase/_cookies";

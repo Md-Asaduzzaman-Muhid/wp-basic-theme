@@ -19,6 +19,7 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.png" alt="facebook">
 							</a>
 						</li>
+						<i class="fa-solid fa-house"></i>
 					</ul>
 				</div>
 			</div>
@@ -49,4 +50,8 @@
 			</div>
 		</nav>
 	</div>
+<div class="row">
+	<div class="col-md-6">sdfsdf</div>
+	<div class="col-md-6">sdfsdf</div>
+</div>
 </header>
