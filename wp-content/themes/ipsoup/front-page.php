@@ -136,7 +136,7 @@ get_header(); ?>
 						<img class="img-fluid" src="<?php echo $zadowolonych['icon']; ?>" alt="zadowolonych">
 					</div>
 					<p><?php echo $zadowolonych['title']; ?></p>
-					<h3 class="counter" data-target="<?php echo $zadowolonych['quantity']; ?>"><?php echo $zadowolonych['quantity']; ?></h3>
+					<h3 class="counter" data-target="<?php echo $zadowolonych['quantity'] ?: '100' ?>"><?php echo $zadowolonych['quantity']; ?></h3>
 				</div>
 			</div>
 			<div class="col-md-4  anima anima-top">
@@ -146,7 +146,7 @@ get_header(); ?>
 						<img class="img-fluid" src="<?php echo $wykonanych['icon']; ?>" alt="zadowolonych">
 					</div>
 					<p><?php echo $wykonanych['title']; ?></p>
-					<h3 class="counter" data-target="<?php echo $wykonanych['quantity']; ?>"><?php echo $wykonanych['quantity']; ?></h3>
+					<h3 class="counter" data-target="<?php echo $wykonanych['quantity'] ?: '200' ?>"><?php echo $wykonanych['quantity']; ?></h3>
 				</div>
 			</div>
 			<div class="col-md-4  anima anima-right">

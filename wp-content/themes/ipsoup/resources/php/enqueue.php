@@ -12,12 +12,12 @@ function load_styles_and_scripts() {
   wp_enqueue_script('wow', get_template_directory_uri() . '/resources/js/wow.js', false, false, true);
   wp_enqueue_script('global', get_template_directory_uri() . '/resources/js/global.js');
   wp_enqueue_script('theme', get_template_directory_uri() . '/js/theme.js', false, false, true);
-  
+  wp_enqueue_style('style', get_template_directory_uri()."/style.css");
   wp_enqueue_style('bootstrap-css', get_template_directory_uri()."/resources/css/bootstrap.min.css");
   wp_enqueue_style('leaflet-style', get_template_directory_uri()."/resources/css/leaflet.css");
   wp_enqueue_style('slick-style', get_template_directory_uri()."/resources/css/swiper-bundle.min.css");
   wp_enqueue_style('animate-style', get_template_directory_uri()."/resources/css/animate.min.css");
-  wp_enqueue_style('style', get_template_directory_uri()."/style.css");
+  
 }
 add_action('wp_enqueue_scripts', 'load_styles_and_scripts');
 add_filter('use_default_gallery_style', '__return_false');
@@ -61,17 +61,17 @@ register_sidebar ( array(
 $my_options[] = array('phone', 'Telefon');
 $my_options[] = array('phone2', 'Telefon 2');
 $my_options[] = array('fax', 'Fax');
-$my_options[] = array('mail', 'E-mail');
-$my_options[] = array('address_name', 'Adres - nazwa');
+$my_options[] = array('e-mail', 'E-mail');
+$my_options[] = array('address', 'Adres');
 $my_options[] = array('address_line1', 'Adres - linia 1');
 $my_options[] = array('address_line2', 'Adres - linia 2');
 $my_options[] = array('address_line3', 'Adres - linia 3');
 $my_options[] = array('facebook', 'Facebook');
-$my_options[] = array('twitter', 'Twitter');
+$my_options[] = array('twitter-x', 'Twitter-X');
 $my_options[] = array('instagram', 'Instagram');
 $my_options[] = array('youtube', 'Youtube');
-$my_options[] = array('haslo_firmy1', 'Hasło Firmy 1');
-$my_options[] = array('haslo_firmy2', 'Hasło Firmy 2');
+$my_options[] = array('tiktok', 'Tiktok');
+
 
 add_action('admin_menu', 'plugin_admin_add_page');
 function plugin_admin_add_page() {

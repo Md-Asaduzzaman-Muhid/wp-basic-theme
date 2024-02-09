@@ -8,26 +8,33 @@
 <header class="header">
 	<div class="header-top bg-dark py-3">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-right">
-				<ul class="text-right social-link m-0 p-0 h-100">
-						<li class="wow zoomIn list-inline-item">
-							<a href="mailto:<?php echo get_option('mail') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/icons/mail.png" alt="mail"></a>
-						</li>
-						<li class="wow zoomIn list-inline-item">
-							<a href="<?php echo get_option('facebook') ?>" target="_blank">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.png" alt="facebook">
-							</a>
-						</li>
-						<i class="fa-solid fa-house"></i>
-					</ul>
-				</div>
-			</div>
+			<ul class="social-links m-0 p-0 text-end">
+				<li class="wow zoomIn">
+					<a href="<?php echo get_option('facebook') ?>" target="_blank">
+					<?php include(get_template_directory().'/img/icons/facebook-f.svg') ?></a>
+				</li>
+				<li class="wow zoomIn">
+					<a href="<?php echo get_option('facebook') ?>" target="_blank">
+					<?php include(get_template_directory().'/img/icons/instagram.svg') ?></a>
+				</li>
+				<li class="wow zoomIn">
+					<a href="<?php echo get_option('facebook') ?>" target="_blank">
+					<?php include(get_template_directory().'/img/icons/x-twitter.svg') ?></a>
+				</li>
+				<li class="wow zoomIn">
+					<a href="<?php echo get_option('facebook') ?>" target="_blank">
+					<?php include(get_template_directory().'/img/icons/tiktok.svg') ?></a>
+				</li>
+				<li class="wow zoomIn">
+					<a href="<?php echo get_option('facebook') ?>" target="_blank">
+					<?php include(get_template_directory().'/img/icons/youtube.svg') ?></a>
+				</li>
+			</ul>
 		</div>
 	</div>
 	
-	<div class="header-menu ">
-		<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+	<div class="header-menu">
+		<nav class="navbar navbar-expand-lg">
 			<div class="container">
 				<div class="logo wow bounceInDown">
 					<a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>">
@@ -35,7 +42,7 @@
 					</a>
 				</div>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				
@@ -44,14 +51,10 @@
 						'theme_location'  => 'top-menu',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'mainNavigation',
-						'menu_class'      => 'navbar-nav ml-auto'
+						'menu_class'      => 'navbar-nav ms-auto'
 					)
 				); ?>
 			</div>
 		</nav>
 	</div>
-<div class="row">
-	<div class="col-md-6">sdfsdf</div>
-	<div class="col-md-6">sdfsdf</div>
-</div>
 </header>
