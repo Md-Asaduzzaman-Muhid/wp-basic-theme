@@ -41,10 +41,9 @@
 
     register_nav_menus( array(
         'top-menu'    => __( 'Top Menu', '' ),
-        'footer-menu' => __( 'Footer Menu', '' ),
-        'menu-2' => __( 'Menu 2', '' ),
+        'menu-2' => __( 'Menu 2', 'menu-2' ),
+        'menu-3' => __( 'Menu 3', 'menu-3' ),
     ));
-
 
     add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
