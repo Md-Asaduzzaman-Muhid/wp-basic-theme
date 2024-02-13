@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name: fotowoltaika
+Template Name: FAQ
 */
 get_header(); ?>
 <section class="title-section position-relative">

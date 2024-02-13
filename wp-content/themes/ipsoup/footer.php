@@ -95,7 +95,7 @@
 		
 	</footer>
 	<div class="totop">
-		<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons/up-white.png" alt="upIcon">
+		<?php include(get_template_directory().'/img/icons/chevron-up-solid.svg') ?>
 	</div>
 	<?php wp_footer();?>
 </body>

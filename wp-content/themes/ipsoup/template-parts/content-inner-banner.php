@@ -11,4 +11,5 @@ if ( !is_404() && !is_search() ) {
 }
 ?>
 
-<div class="page-hero" style="background-image: url(<?php echo $inner_banner; ?>);"></div>
+<section class="page-hero" style="background-image: url(<?php echo $inner_banner; ?>);">
+</section>

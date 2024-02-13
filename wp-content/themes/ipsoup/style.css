@@ -151,16 +151,6 @@ a:hover {
   color: #14232b;
 }
 
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  list-style: none;
-}
-.social-link li:not(:last-child) {
-  padding-right: 20px;
-}
-
 .page-title {
   position: absolute;
   bottom: 0;
@@ -190,7 +180,7 @@ a:hover {
   border: 2px solid #6610f2;
   border-radius: 50%;
   text-align: center;
-  line-height: 1.9;
+  line-height: 2;
 }
 .social-links li a svg {
   height: 20px;
@@ -207,10 +197,17 @@ a:hover {
   fill: #24b365;
 }
 
+.contact-links {
+  list-style: none;
+}
+.contact-links li {
+  margin-bottom: 15px;
+}
 .contact-links svg {
   height: 20px;
   width: 20px;
   fill: #fff;
+  margin-right: 10px;
 }
 
 .btn-1 {
@@ -308,6 +305,11 @@ a:hover {
   -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
+.totop svg {
+  fill: #fff;
+  height: 15px;
+  width: 15px;
+}
 
 .sticky {
   position: fixed;
@@ -343,6 +345,9 @@ a:hover {
   width: 100%;
 }
 
+.header-menu {
+  background-color: #fff;
+}
 .header-menu .navbar {
   padding: 0;
 }
@@ -364,7 +369,7 @@ a:hover {
   background-color: #404040;
 }
 .header-menu .navbar .navbar-nav .nav-link {
-  padding: 12px 6px;
+  padding: 12px;
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
@@ -408,39 +413,42 @@ a:hover {
   transform: translate(-2em, 0);
 }
 
-@media (min-width: 190px) {
-  .navbar-nav > li:hover > .sub-menu {
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    top: 100%;
-    z-index: 100;
-    transition-delay: 0s, 0s, 0.3s;
-  }
-  .navbar-nav .sub-menu li:hover > .sub-menu {
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 100;
-    transform: translate(0, 0);
-    transition-delay: 0s, 0s, 0.3s;
-  }
-  .menu-item-has-children:hover > a,
-  .single-post .current_page_parent > a,
-  .current-menu-parent > a {
-    color: #6610f2 !important;
-  }
-  .menu-item-has-children:hover > a:hover,
-  .single-post .current_page_parent > a:hover,
-  .current-menu-parent > a:hover {
-    color: #fff;
-  }
-  .current-menu-ancestor > a {
-    border-color: #6610f2 !important;
-  }
-  .sub-menu .current-menu-parent > a,
-  .sub-menu .current-menu-item > a {
-    color: #6610f2;
-  }
+.navbar-nav > li:hover > .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  top: 100%;
+  z-index: 100;
+  transition-delay: 0s, 0s, 0.3s;
 }
+
+.navbar-nav .sub-menu li:hover > .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 100;
+  transform: translate(0, 0);
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+.menu-item-has-children:hover > a,
+.single-post .current_page_parent > a,
+.current-menu-parent > a {
+  color: #6610f2 !important;
+}
+.menu-item-has-children:hover > a:hover,
+.single-post .current_page_parent > a:hover,
+.current-menu-parent > a:hover {
+  color: #fff;
+}
+
+.current-menu-ancestor > a {
+  border-color: #6610f2 !important;
+}
+
+.sub-menu .current-menu-parent > a,
+.sub-menu .current-menu-item > a {
+  color: #6610f2;
+}
+
 .wprmenu_bar .hamburger-inner, .wprmenu_bar .hamburger-inner::before, .wprmenu_bar .hamburger-inner::after {
   background: #24b365;
 }

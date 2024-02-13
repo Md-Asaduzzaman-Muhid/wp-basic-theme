@@ -14,6 +14,7 @@
 }
 
 .header-menu{
+    background-color: #fff;
     .navbar {
         padding: 0;
         .navbar-nav{
@@ -41,7 +42,7 @@
                 background-color: $tmpdark;
             }
             .nav-link{
-                padding: 12px 6px;
+                padding: 12px;
                 font-size: 12px;
                 font-weight: 900;
                 text-transform: uppercase;
@@ -107,52 +108,47 @@
         }
     }
 }
-@media (min-width: 190px) {
+.navbar-nav > li:hover > .sub-menu{
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    top: 100%;
+    z-index: 100;
+    transition-delay: 0s, 0s, 0.3s;
+}
 
-    .navbar-nav > li:hover > .sub-menu{
-        visibility: visible; /* shows sub-menu */
-        opacity: 1;
-        top: 100%;
-        z-index: 100;
-        transition-delay: 0s, 0s, 0.3s;
-    }
+.navbar-nav .sub-menu li:hover > .sub-menu {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 100;
+    transform: translate(0,0);
+    transition-delay: 0s, 0s, 0.3s;
+}
+//current menu style
+.menu-item-has-children:hover > a,
+.single-post .current_page_parent > a ,
+//.current-menu-item > a ,
+//.current-menu-ancestor > a ,
+.current-menu-parent > a {
+    //background-color: $tmpcolor;
+    color: $tmpcolor !important;
 
-    .navbar-nav .sub-menu li:hover > .sub-menu {
-        visibility: visible; /* shows sub-menu */
-        opacity: 1;
-        z-index: 100;
-        transform: translate(0,0);
-        transition-delay: 0s, 0s, 0.3s;
-    }
-
-    //current menu style
-    .menu-item-has-children:hover > a,
-    .single-post .current_page_parent > a ,
-    //.current-menu-item > a ,
-    //.current-menu-ancestor > a ,
-    .current-menu-parent > a {
+    &:hover {
         //background-color: $tmpcolor;
-        color: $tmpcolor !important;
-
-        &:hover {
-            //background-color: $tmpcolor;
-            color: #fff;
-        }
-    }
-
-    .current-menu-ancestor > a {
-        border-color: $tmpcolor !important;
-    }
-
-    .sub-menu {
-        .current-menu-parent > a,
-        .current-menu-item > a {
-            //background: darken($tmpcolor, 12%);
-            color: $tmpcolor;
-        }
+        color: #fff;
     }
 }
 
+.current-menu-ancestor > a {
+    border-color: $tmpcolor !important;
+}
+
+.sub-menu {
+    .current-menu-parent > a,
+    .current-menu-item > a {
+        //background: darken($tmpcolor, 12%);
+        color: $tmpcolor;
+    }
+}
 //responsive menu
 .wprmenu_bar .hamburger-inner, .wprmenu_bar .hamburger-inner::before, .wprmenu_bar .hamburger-inner::after {
     background: $primary-color;
