@@ -1,0 +1,43 @@
+
+.feature-single{
+    img{
+        max-width: 70px;
+    }
+   
+    .content{
+        padding-left: 20px;
+        h3{
+            font-size: 20px;
+            color: $primary-color;
+        }
+    }
+}
+
+.about-section{
+    background-color: $primary-color;
+}
+
+.counter-section{
+    .row > *:first-child {
+        border-radius: 6px 0 0 6px;
+    }
+    .row > * {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        border: 1px solid $primary-color;
+        margin-left: -1px;
+    }
+    .row > *:last-child {
+        border-radius: 0 6px 6px 0;
+    }
+    h3{
+        color: $primary-color;
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+    p{
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,798 @@
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+
+@import "hovermaster/options";
+@import "hovermaster/mixins";
+@import "hovermaster/hacks";
+
+
+/* 2D TRANSITIONS */
+// @import "hovermaster/effects/2d-transitions/grow";
+// @import "hovermaster/effects/2d-transitions/shrink";
+// @import "hovermaster/effects/2d-transitions/pulse";
+// @import "hovermaster/effects/2d-transitions/pulse-grow";
+// @import "hovermaster/effects/2d-transitions/pulse-shrink";
+// @import "hovermaster/effects/2d-transitions/push";
+// @import "hovermaster/effects/2d-transitions/pop";
+// @import "hovermaster/effects/2d-transitions/bounce-in";
+// @import "hovermaster/effects/2d-transitions/bounce-out";
+// @import "hovermaster/effects/2d-transitions/rotate";
+// @import "hovermaster/effects/2d-transitions/grow-rotate";
+// @import "hovermaster/effects/2d-transitions/float";
+// @import "hovermaster/effects/2d-transitions/sink";
+// @import "hovermaster/effects/2d-transitions/bob";
+// @import "hovermaster/effects/2d-transitions/hang";
+// @import "hovermaster/effects/2d-transitions/skew";
+// @import "hovermaster/effects/2d-transitions/skew-forward";
+// @import "hovermaster/effects/2d-transitions/skew-backward";
+// @import "hovermaster/effects/2d-transitions/wobble-vertical";
+// @import "hovermaster/effects/2d-transitions/wobble-horizontal";
+// @import "hovermaster/effects/2d-transitions/wobble-to-bottom-right";
+// @import "hovermaster/effects/2d-transitions/wobble-to-top-right";
+// @import "hovermaster/effects/2d-transitions/wobble-top";
+// @import "hovermaster/effects/2d-transitions/wobble-bottom";
+// @import "hovermaster/effects/2d-transitions/wobble-skew";
+// @import "hovermaster/effects/2d-transitions/buzz";
+// @import "hovermaster/effects/2d-transitions/buzz-out";
+// @import "hovermaster/effects/2d-transitions/forward";
+// @import "hovermaster/effects/2d-transitions/backward";
+// @import "hovermaster/effects/background-transitions/fade";
+// @import "hovermaster/effects/background-transitions/back-pulse";
+// @import "hovermaster/effects/background-transitions/sweep-to-right";
+// @import "hovermaster/effects/background-transitions/sweep-to-left";
+// @import "hovermaster/effects/background-transitions/sweep-to-bottom";
+@import "hovermaster/effects/background-transitions/sweep-to-top";
+// @import "hovermaster/effects/background-transitions/bounce-to-right";
+// @import "hovermaster/effects/background-transitions/bounce-to-left";
+// @import "hovermaster/effects/background-transitions/bounce-to-bottom";
+// @import "hovermaster/effects/background-transitions/bounce-to-top";
+// @import "hovermaster/effects/background-transitions/radial-out";
+// @import "hovermaster/effects/background-transitions/radial-in";
+// @import "hovermaster/effects/background-transitions/rectangle-in";
+// @import "hovermaster/effects/background-transitions/rectangle-out";
+// @import "hovermaster/effects/background-transitions/shutter-in-horizontal";
+// @import "hovermaster/effects/background-transitions/shutter-out-horizontal";
+// @import "hovermaster/effects/background-transitions/shutter-in-vertical";
+// @import "hovermaster/effects/background-transitions/shutter-out-vertical";
+// @import "hovermaster/effects/border-transitions/border-fade";
+// @import "hovermaster/effects/border-transitions/hollow";
+// @import "hovermaster/effects/border-transitions/trim";
+// @import "hovermaster/effects/border-transitions/ripple-out";
+// @import "hovermaster/effects/border-transitions/ripple-in";
+// @import "hovermaster/effects/border-transitions/outline-out";
+// @import "hovermaster/effects/border-transitions/outline-in";
+// @import "hovermaster/effects/border-transitions/round-corners";
+// @import "hovermaster/effects/border-transitions/underline-from-left";
+// @import "hovermaster/effects/border-transitions/underline-from-center";
+// @import "hovermaster/effects/border-transitions/underline-from-right";
+// @import "hovermaster/effects/border-transitions/overline-from-left";
+// @import "hovermaster/effects/border-transitions/overline-from-center";
+// @import "hovermaster/effects/border-transitions/overline-from-right";
+// @import "hovermaster/effects/border-transitions/reveal";
+// @import "hovermaster/effects/border-transitions/underline-reveal";
+// @import "hovermaster/effects/border-transitions/overline-reveal";
+// @import "hovermaster/effects/shadow-and-glow-transitions/glow";
+// @import "hovermaster/effects/shadow-and-glow-transitions/shadow";
+// @import "hovermaster/effects/shadow-and-glow-transitions/grow-shadow";
+// @import "hovermaster/effects/shadow-and-glow-transitions/box-shadow-outset";
+// @import "hovermaster/effects/shadow-and-glow-transitions/box-shadow-inset";
+// @import "hovermaster/effects/shadow-and-glow-transitions/float-shadow";
+// @import "hovermaster/effects/shadow-and-glow-transitions/shadow-radial";
+// @import "hovermaster/effects/speech-bubbles/bubble-top";
+// @import "hovermaster/effects/speech-bubbles/bubble-right";
+// @import "hovermaster/effects/speech-bubbles/bubble-bottom";
+// @import "hovermaster/effects/speech-bubbles/bubble-left";
+// @import "hovermaster/effects/speech-bubbles/bubble-float-top";
+// @import "hovermaster/effects/speech-bubbles/bubble-float-right";
+// @import "hovermaster/effects/speech-bubbles/bubble-float-bottom";
+// @import "hovermaster/effects/speech-bubbles/bubble-float-left";
+// @import "hovermaster/effects/icons/icon-back";
+// @import "hovermaster/effects/icons/icon-forward";
+// @import "hovermaster/effects/icons/icon-down";
+// @import "hovermaster/effects/icons/icon-up";
+// @import "hovermaster/effects/icons/icon-spin";
+// @import "hovermaster/effects/icons/icon-drop";
+// @import "hovermaster/effects/icons/icon-fade";
+// @import "hovermaster/effects/icons/icon-float-away";
+// @import "hovermaster/effects/icons/icon-sink-away";
+// @import "hovermaster/effects/icons/icon-grow";
+// @import "hovermaster/effects/icons/icon-shrink";
+// @import "hovermaster/effects/icons/icon-pulse";
+// @import "hovermaster/effects/icons/icon-pulse-grow";
+// @import "hovermaster/effects/icons/icon-pulse-shrink";
+// @import "hovermaster/effects/icons/icon-push";
+// @import "hovermaster/effects/icons/icon-pop";
+// @import "hovermaster/effects/icons/icon-bounce";
+// @import "hovermaster/effects/icons/icon-rotate";
+// @import "hovermaster/effects/icons/icon-grow-rotate";
+// @import "hovermaster/effects/icons/icon-float";
+// @import "hovermaster/effects/icons/icon-sink";
+// @import "hovermaster/effects/icons/icon-bob";
+// @import "hovermaster/effects/icons/icon-hang";
+// @import "hovermaster/effects/icons/icon-wobble-horizontal";
+// @import "hovermaster/effects/icons/icon-wobble-vertical";
+// @import "hovermaster/effects/icons/icon-buzz";
+// @import "hovermaster/effects/icons/icon-buzz-out";
+// @import "hovermaster/effects/curls/curl-top-left";
+// @import "hovermaster/effects/curls/curl-top-right";
+// @import "hovermaster/effects/curls/curl-bottom-right";
+// @import "hovermaster/effects/curls/curl-bottom-left";
+
+
+@if $includeClasses {
+	@if mixin-exists(grow) { 
+		.#{$nameSpace}-grow {
+			@include grow();
+		}
+	}
+
+	@if mixin-exists(grow) {
+		.#{$nameSpace}-shrink {
+			@include shrink();
+		}
+	}
+
+	@if mixin-exists(pulse) {
+		.#{$nameSpace}-pulse {
+			@include pulse();
+		}
+	}
+
+	@if mixin-exists(pulse-grow) {
+		.#{$nameSpace}-pulse-grow {
+			@include pulse-grow();
+		}
+	}
+
+	@if mixin-exists(pulse-shrink) {
+		.#{$nameSpace}-pulse-shrink {
+			@include pulse-shrink();
+		}
+	}
+
+	@if mixin-exists(push) {
+		.#{$nameSpace}-push {
+			@include push();
+		}
+	}
+
+	@if mixin-exists(pop) {
+		.#{$nameSpace}-pop {
+			@include pop();
+		}
+	}
+
+	@if mixin-exists(bounce-in) {
+		.#{$nameSpace}-bounce-in {
+			@include bounce-in();
+		}
+	}
+
+	@if mixin-exists(bounce-out) {
+		.#{$nameSpace}-bounce-out {
+			@include bounce-out();
+		}
+	}
+
+	@if mixin-exists(rotate) {
+		.#{$nameSpace}-rotate {
+			@include rotate();
+		}
+	}
+
+	@if mixin-exists(grow-rotate) {
+		.#{$nameSpace}-grow-rotate {
+			@include grow-rotate();
+		}
+	}
+
+	@if mixin-exists(float) {
+		.#{$nameSpace}-float {
+			@include float();
+		}
+	}
+
+	@if mixin-exists(sink) {
+		.#{$nameSpace}-sink {
+			@include sink();
+		}
+	}
+
+	@if mixin-exists(bob) {
+		.#{$nameSpace}-bob {
+			@include bob();
+		}
+	}
+
+	@if mixin-exists(hang) {
+		.#{$nameSpace}-hang {
+			@include hang();
+		}
+	}
+
+	@if mixin-exists(skew) {
+		.#{$nameSpace}-skew {
+			@include skew();
+		}
+	}
+
+	@if mixin-exists(skew-forward) {
+		.#{$nameSpace}-skew-forward {
+			@include skew-forward();
+		}
+	}
+
+	@if mixin-exists(skew-backward) {
+		.#{$nameSpace}-skew-backward {
+			@include skew-backward();
+		}
+	}
+
+	@if mixin-exists(wobble-vertical) {
+		.#{$nameSpace}-wobble-vertical {
+			@include wobble-vertical();
+		}
+	}
+
+	@if mixin-exists(wobble-horizontal) {
+		.#{$nameSpace}-wobble-horizontal {
+			@include wobble-horizontal();
+		}
+	}
+
+	@if mixin-exists(wobble-to-bottom-right) {
+		.#{$nameSpace}-wobble-to-bottom-right {
+			@include wobble-to-bottom-right();
+		}
+	}
+
+	@if mixin-exists(wobble-to-top-right) {
+		.#{$nameSpace}-wobble-to-top-right {
+			@include wobble-to-top-right();
+		}
+	}
+
+	@if mixin-exists(wobble-top) {
+		.#{$nameSpace}-wobble-top {
+			@include wobble-top();
+		}
+	}
+
+	@if mixin-exists(wobble-bottom) {
+		.#{$nameSpace}-wobble-bottom {
+			@include wobble-bottom();
+		}
+	}
+
+	@if mixin-exists(wobble-skew) {
+		.#{$nameSpace}-wobble-skew {
+			@include wobble-skew();
+		}
+	}
+
+	@if mixin-exists(buzz) {
+		.#{$nameSpace}-buzz {
+			@include buzz();
+		}
+	}
+
+	@if mixin-exists(buzz-out) {
+		.#{$nameSpace}-buzz-out {
+			@include buzz-out();
+		}
+	}
+
+	@if mixin-exists(forward) {
+		.#{$nameSpace}-forward {
+			@include forward();
+		}
+	}
+
+	@if mixin-exists(backward) {
+		.#{$nameSpace}-backward {
+			@include backward();
+		}
+	}
+
+	/* BACKGROUND TRANSITIONS */
+	@if mixin-exists(fade) {
+		.#{$nameSpace}-fade {
+			@include fade();
+		}
+	}
+
+	@if mixin-exists(back-pulse) {
+		.#{$nameSpace}-back-pulse {
+			@include back-pulse();
+		}
+	}
+
+	@if mixin-exists(sweep-to-right) {
+		.#{$nameSpace}-sweep-to-right {
+			@include sweep-to-right();
+		}
+	}
+
+	@if mixin-exists(sweep-to-left) {
+		.#{$nameSpace}-sweep-to-left {
+			@include sweep-to-left();
+		}
+	}
+
+	@if mixin-exists(sweep-to-bottom) {
+		.#{$nameSpace}-sweep-to-bottom {
+			@include sweep-to-bottom();
+		}
+	}
+
+	@if mixin-exists(sweep-to-top) {
+		.#{$nameSpace}-sweep-to-top {
+			@include sweep-to-top();
+		}
+	}
+
+	@if mixin-exists(bounce-to-right) {
+		.#{$nameSpace}-bounce-to-right {
+			@include bounce-to-right();
+		}
+	}
+
+	@if mixin-exists(bounce-to-left) {
+		.#{$nameSpace}-bounce-to-left {
+			@include bounce-to-left();
+		}
+	}
+
+	@if mixin-exists(bounce-to-bottom) {
+		.#{$nameSpace}-bounce-to-bottom {
+			@include bounce-to-bottom();
+		}
+	}
+
+	@if mixin-exists(bounce-to-top) {
+		.#{$nameSpace}-bounce-to-top {
+			@include bounce-to-top();
+		}
+	}
+
+	@if mixin-exists(radial-out) {
+		.#{$nameSpace}-radial-out {
+			@include radial-out();
+		}
+	}
+
+	@if mixin-exists(radial-in) {
+		.#{$nameSpace}-radial-in {
+			@include radial-in();
+		}
+	}
+
+	@if mixin-exists(rectangle-in) {
+		.#{$nameSpace}-rectangle-in {
+			@include rectangle-in();
+		}
+	}
+
+	@if mixin-exists(rectangle-out) {
+		.#{$nameSpace}-rectangle-out {
+			@include rectangle-out();
+		}
+	}
+
+	@if mixin-exists(shutter-in-horizontal) {
+		.#{$nameSpace}-shutter-in-horizontal {
+			@include shutter-in-horizontal();
+		}
+	}
+
+	@if mixin-exists(shutter-out-horizontal) {
+		.#{$nameSpace}-shutter-out-horizontal {
+			@include shutter-out-horizontal();
+		}
+	}
+
+	@if mixin-exists(shutter-in-vertical) {
+		.#{$nameSpace}-shutter-in-vertical {
+			@include shutter-in-vertical();
+		}
+	}
+
+	@if mixin-exists(shutter-out-vertical) {
+		.#{$nameSpace}-shutter-out-vertical {
+			@include shutter-out-vertical();
+		}
+	}
+
+
+	/* BORDER TRANSITIONS */
+	@if mixin-exists(border-fade) {
+		.#{$nameSpace}-border-fade {
+			@include border-fade();
+		}
+	}
+
+	@if mixin-exists(hollow) {
+		.#{$nameSpace}-hollow {
+			@include hollow();
+		}
+	}
+
+	@if mixin-exists(trim) {
+		.#{$nameSpace}-trim {
+			@include trim();
+		}
+	}
+
+	@if mixin-exists(ripple-out) {
+		.#{$nameSpace}-ripple-out {
+			@include ripple-out();
+		}
+	}
+
+	@if mixin-exists(ripple-in) {
+		.#{$nameSpace}-ripple-in {
+			@include ripple-in();
+		}
+	}
+
+
+	@if mixin-exists(outline-out) {
+		.#{$nameSpace}-outline-out {
+			@include outline-out();
+		}
+	}
+
+	@if mixin-exists(outline-in) {
+		.#{$nameSpace}-outline-in {
+			@include outline-in();
+		}
+	}
+
+	@if mixin-exists(round-corners) {
+		.#{$nameSpace}-round-corners {
+			@include round-corners();
+		}
+	}
+
+	@if mixin-exists(underline-from-left) {
+		.#{$nameSpace}-underline-from-left {
+			@include underline-from-left();
+		}
+	}
+
+	@if mixin-exists(underline-from-center) {
+		.#{$nameSpace}-underline-from-center {
+			@include underline-from-center();
+		}
+	}
+
+	@if mixin-exists(underline-from-right) {
+		.#{$nameSpace}-underline-from-right {
+			@include underline-from-right();
+		}
+	}
+
+	@if mixin-exists(overline-from-left) {
+		.#{$nameSpace}-overline-from-left {
+			@include overline-from-left();
+		}
+	}
+
+	@if mixin-exists(overline-from-center) {
+		.#{$nameSpace}-overline-from-center {
+			@include overline-from-center();
+		}
+	}
+
+	@if mixin-exists(overline-from-right) {
+		.#{$nameSpace}-overline-from-right {
+			@include overline-from-right();
+		}
+	}
+
+	@if mixin-exists(reveal) {
+		.#{$nameSpace}-reveal {
+			@include reveal();
+		}
+	}
+
+	@if mixin-exists(underline-reveal) {
+		.#{$nameSpace}-underline-reveal {
+			@include underline-reveal();
+		}
+	}
+
+	@if mixin-exists(overline-reveal) {
+		.#{$nameSpace}-overline-reveal {
+			@include overline-reveal();
+		}
+	}
+
+
+	/* SHADOW/GLOW TRANSITIONS */
+	@if mixin-exists(glow) {
+		.#{$nameSpace}-glow {
+			@include glow();
+		}
+	}
+
+	@if mixin-exists(shadow) {
+		.#{$nameSpace}-shadow {
+			@include shadow();
+		}
+	}
+
+	@if mixin-exists(grow-shadow) {
+		.#{$nameSpace}-grow-shadow {
+			@include grow-shadow();
+		}
+	}
+
+	@if mixin-exists(box-shadow-outset) {
+		.#{$nameSpace}-box-shadow-outset {
+			@include box-shadow-outset();
+		}
+	}
+
+	@if mixin-exists(box-shadow-inset) {
+		.#{$nameSpace}-box-shadow-inset {
+			@include box-shadow-inset();
+		}
+	}
+
+	@if mixin-exists(float-shadow) {
+		.#{$nameSpace}-float-shadow {
+			@include float-shadow();
+		}
+	}
+
+	@if mixin-exists(shadow-radial) {
+		.#{$nameSpace}-shadow-radial {
+			@include shadow-radial();
+		}
+	}
+
+	/* SPEECH BUBBLES */
+	@if mixin-exists(bubble-top) {
+		.#{$nameSpace}-bubble-top {
+			@include bubble-top();
+		}
+	}
+
+	@if mixin-exists(bubble-right) {
+		.#{$nameSpace}-bubble-right {
+			@include bubble-right();
+		}
+	}
+
+	@if mixin-exists(bubble-bottom) {
+		.#{$nameSpace}-bubble-bottom {
+			@include bubble-bottom();
+		}
+	}
+
+	@if mixin-exists(bubble-left) {
+		.#{$nameSpace}-bubble-left {
+			@include bubble-left();
+		}
+	}
+
+	@if mixin-exists(bubble-float-top) {
+		.#{$nameSpace}-bubble-float-top {
+			@include bubble-float-top();
+		}
+	}
+
+	@if mixin-exists(bubble-float-right) {
+		.#{$nameSpace}-bubble-float-right {
+			@include bubble-float-right();
+		}
+	}
+
+	@if mixin-exists(bubble-float-bottom) {
+		.#{$nameSpace}-bubble-float-bottom {
+			@include bubble-float-bottom();
+		}
+	}
+
+	@if mixin-exists(bubble-float-left) {
+		.#{$nameSpace}-bubble-float-left {
+			@include bubble-float-left();
+		}
+	}
+
+	/* ICONS */
+	@if mixin-exists(icon-back) {
+		.#{$nameSpace}-icon-back {
+			@include icon-back();
+		}
+	}
+
+	@if mixin-exists(icon-forward) {
+		.#{$nameSpace}-icon-forward {
+			@include icon-forward();
+		}
+	}
+
+	@if mixin-exists(icon-down) {
+		.#{$nameSpace}-icon-down {
+			@include icon-down();
+		}
+	}
+
+	@if mixin-exists(icon-up) {
+		.#{$nameSpace}-icon-up {
+			@include icon-up();
+		}
+	}
+
+	@if mixin-exists(icon-spin) {
+		.#{$nameSpace}-icon-spin {
+			@include icon-spin();
+		}
+	}
+
+	@if mixin-exists(icon-drop) {
+		.#{$nameSpace}-icon-drop {
+			@include icon-drop();
+		}
+	}
+
+	@if mixin-exists(icon-fade) {
+		.#{$nameSpace}-icon-fade {
+			@include icon-fade();
+		}
+	}
+
+	@if mixin-exists(icon-float-away) {
+		.#{$nameSpace}-icon-float-away {
+			@include icon-float-away();
+		}
+	}
+
+	@if mixin-exists(icon-sink-away) {
+		.#{$nameSpace}-icon-sink-away {
+			@include icon-sink-away();
+		}
+	}
+
+	@if mixin-exists(icon-grow) {
+		.#{$nameSpace}-icon-grow {
+			@include icon-grow();
+		}
+	}
+
+	@if mixin-exists(icon-shrink) {
+		.#{$nameSpace}-icon-shrink {
+			@include icon-shrink();
+		}
+	}
+
+	@if mixin-exists(icon-pulse) {
+		.#{$nameSpace}-icon-pulse {
+			@include icon-pulse();
+		}
+	}
+
+	@if mixin-exists(icon-pulse-grow) {
+		.#{$nameSpace}-icon-pulse-grow {
+			@include icon-pulse-grow();
+		}
+	}
+
+	@if mixin-exists(icon-pulse-shrink) {
+		.#{$nameSpace}-icon-pulse-shrink {
+			@include icon-pulse-shrink();
+		}
+	}
+
+	@if mixin-exists(icon-push) {
+		.#{$nameSpace}-icon-push {
+			@include icon-push();
+		}
+	}
+
+	@if mixin-exists(icon-pop) {
+		.#{$nameSpace}-icon-pop {
+			@include icon-pop();
+		}
+	}
+
+	@if mixin-exists(icon-bounce) {
+		.#{$nameSpace}-icon-bounce {
+			@include icon-bounce();
+		}
+	}
+
+	@if mixin-exists(icon-rotate) {
+		.#{$nameSpace}-icon-rotate {
+			@include icon-rotate();
+		}
+	}
+
+	@if mixin-exists(icon-grow-rotate) {
+		.#{$nameSpace}-icon-grow-rotate {
+			@include icon-grow-rotate();
+		}
+	}
+
+	@if mixin-exists(icon-float) {
+		.#{$nameSpace}-icon-float {
+			@include icon-float();
+		}
+	}
+
+	@if mixin-exists(icon-sink) {
+		.#{$nameSpace}-icon-sink {
+			@include icon-sink();
+		}
+	}
+
+	@if mixin-exists(icon-bob) {
+		.#{$nameSpace}-icon-bob {
+			@include icon-bob();
+		}
+	}
+
+	@if mixin-exists(icon-hang) {
+		.#{$nameSpace}-icon-hang {
+			@include icon-hang();
+		}
+	}
+
+	@if mixin-exists(icon-wobble-horizontal) {
+		.#{$nameSpace}-icon-wobble-horizontal {
+			@include icon-wobble-horizontal();
+		}
+	}
+
+	@if mixin-exists(icon-wobble-vertical) {
+		.#{$nameSpace}-icon-wobble-vertical {
+			@include icon-wobble-vertical();
+		}
+	}
+
+	@if mixin-exists(icon-buzz) {
+		.#{$nameSpace}-icon-buzz {
+			@include icon-buzz();
+		}
+	}
+
+	@if mixin-exists(icon-buzz-out) {
+		.#{$nameSpace}-icon-buzz-out {
+			@include icon-buzz-out();
+		}
+	}
+
+	/* CURLS */
+	@if mixin-exists(curl-top-left) {
+		.#{$nameSpace}-curl-top-left {
+			@include curl-top-left();
+		}
+	}
+
+	@if mixin-exists(curl-top-right) {
+		.#{$nameSpace}-curl-top-right {
+			@include curl-top-right();
+		}
+	}
+
+	@if mixin-exists(curl-bottom-right) {
+		.#{$nameSpace}-curl-bottom-right {
+			@include curl-bottom-right();
+		}
+	}
+
+	@if mixin-exists(curl-bottom-left) {
+		.#{$nameSpace}-curl-bottom-left {
+			@include curl-bottom-left();
+		}
+	}
+}

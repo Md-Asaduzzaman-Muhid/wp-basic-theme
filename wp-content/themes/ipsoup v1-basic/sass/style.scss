@@ -1,0 +1,37 @@
+// ----- zmienne bootstrapa i moje -----
+// $fa-font-path: 'resources/fonts';
+// $menu-mobile-breakpoint: 'md';
+// $menu-show-arrows-breakpoint: 'xl';
+// $menu_arrows: true;
+
+// ----- import gotowców -----
+@import "_fonts";
+
+
+// @import "libraries/_hovermaster";
+
+@import "custom/_variable";
+@import "custom/_common";
+@import "custom/_header";
+@import "custom/_footer";
+@import "custom/_front-page";
+@import "custom/_post-page";
+
+@import "custom/_plugin-override";
+@import "custom/_responsive";
+
+
+
+// @import "stylebase/_customs";
+// @import "stylebase/_gallery";
+// @import "stylebase/_menu";
+// @import "stylebase/_anima";
+// @import "stylebase/_extgrid";
+// @import "stylebase/_contactforms";
+// @import "stylebase/_cookies";
+
+
+
+.debug {
+	// border: 1px dashed yellow;
+}

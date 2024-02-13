@@ -347,6 +347,7 @@ a:hover {
 
 .header-menu {
   background-color: #fff;
+  z-index: 999;
 }
 .header-menu .navbar {
   padding: 0;
@@ -584,6 +585,48 @@ span.wprmenu_icon.wprmenu_icon_par {
 }
 .menu-footer a:hover {
   color: #24b365;
+}
+
+.feature-single img {
+  max-width: 70px;
+}
+.feature-single .content {
+  padding-left: 20px;
+}
+.feature-single .content h3 {
+  font-size: 20px;
+  color: #24b365;
+}
+
+.about-section {
+  background-color: #24b365;
+}
+
+.counter-section .row > *:first-child {
+  border-radius: 6px 0 0 6px;
+}
+.counter-section .row > * {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border: 1px solid #24b365;
+  margin-left: -1px;
+}
+.counter-section .row > *:last-child {
+  border-radius: 0 6px 6px 0;
+}
+.counter-section h3 {
+  color: #24b365;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.counter-section p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.accordion-item {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
