@@ -5,85 +5,85 @@
  */
 function prefix_register_post_type()
 {
-	// register_post_type(
-	// 	'portfolio',
-	// 	array(
-	// 		'labels'        => array(
-	// 			'name'               => __('Portfolio', 'text_domain'),
-	// 			'singular_name'      => __('Portfolio', 'text_domain'),
-	// 			'menu_name'          => __('Portfolio', 'text_domain'),
-	// 			'name_admin_bar'     => __('Portfolio Item', 'text_domain'),
-	// 			'all_items'          => __('All Items', 'text_domain'),
-	// 			'add_new'            => _x('Add New', 'portfolio', 'text_domain'),
-	// 			'add_new_item'       => __('Add New Item', 'text_domain'),
-	// 			'edit_item'          => __('Edit Item', 'text_domain'),
-	// 			'new_item'           => __('New Item', 'text_domain'),
-	// 			'view_item'          => __('View Item', 'text_domain'),
-	// 			'search_items'       => __('Search Items', 'text_domain'),
-	// 			'not_found'          => __('No items found.', 'text_domain'),
-	// 			'not_found_in_trash' => __('No items found in Trash.', 'text_domain'),
-	// 			'parent_item_colon'  => __('Parent Items:', 'text_domain'),
-	// 		),
-	// 		'public'        => true,
-	// 		'menu_position' => 6,
-	// 		'menu_icon'		=> 'dashicons-format-gallery',
-	// 		'supports'      => array(
-	// 			'title',
-	// 			'editor',
-	// 			'thumbnail',
-	// 			'excerpt',
-	// 			'custom-fields',
-	// 			'author'
-	// 		),
-	// 		'taxonomies'    => array(
-	// 			'portfolio_categories',
-	// 		),
-	// 		'has_archive'   => true,
-	// 		'rewrite'       => array(
-	// 			'slug' => 'portfolio',
-	// 		),
-	// 	)
-	// );
+	register_post_type(
+		'portfolio',
+		array(
+			'labels'        => array(
+				'name'               => __('Portfolio', 'text_domain'),
+				'singular_name'      => __('Portfolio', 'text_domain'),
+				'menu_name'          => __('Portfolio', 'text_domain'),
+				'name_admin_bar'     => __('Portfolio Item', 'text_domain'),
+				'all_items'          => __('All Items', 'text_domain'),
+				'add_new'            => _x('Add New', 'portfolio', 'text_domain'),
+				'add_new_item'       => __('Add New Item', 'text_domain'),
+				'edit_item'          => __('Edit Item', 'text_domain'),
+				'new_item'           => __('New Item', 'text_domain'),
+				'view_item'          => __('View Item', 'text_domain'),
+				'search_items'       => __('Search Items', 'text_domain'),
+				'not_found'          => __('No items found.', 'text_domain'),
+				'not_found_in_trash' => __('No items found in Trash.', 'text_domain'),
+				'parent_item_colon'  => __('Parent Items:', 'text_domain'),
+			),
+			'public'        => true,
+			'menu_position' => 6,
+			'menu_icon'		=> 'dashicons-format-gallery',
+			'supports'      => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'excerpt',
+				'custom-fields',
+				'author'
+			),
+			'taxonomies'    => array(
+				'portfolio_categories',
+			),
+			'has_archive'   => true,
+			'rewrite'       => array(
+				'slug' => 'portfolio',
+			),
+		)
+	);
 
-    //     register_post_type(
-	// 	'faq',
-	// 	array(
-	// 		'labels'        => array(
-	// 			'name'               => __('Faq', 'text_domain'),
-	// 			'singular_name'      => __('Faq', 'text_domain'),
-	// 			'menu_name'          => __('Faq', 'text_domain'),
-	// 			'name_admin_bar'     => __('Faq Item', 'text_domain'),
-	// 			'all_items'          => __('All Items', 'text_domain'),
-	// 			'add_new'            => _x('Add New', 'faq', 'text_domain'),
-	// 			'add_new_item'       => __('Add New Item', 'text_domain'),
-	// 			'edit_item'          => __('Edit Item', 'text_domain'),
-	// 			'new_item'           => __('New Item', 'text_domain'),
-	// 			'view_item'          => __('View Item', 'text_domain'),
-	// 			'search_items'       => __('Search Items', 'text_domain'),
-	// 			'not_found'          => __('No items found.', 'text_domain'),
-	// 			'not_found_in_trash' => __('No items found in Trash.', 'text_domain'),
-	// 			'parent_item_colon'  => __('Parent Items:', 'text_domain'),
-	// 		),
-	// 		'public'        => true,
-	// 		'menu_position' => 7,
-	// 		'menu_icon'		=> 'dashicons-editor-help',
-	// 		'supports'      => array(
-	// 			'title',
-	// 			'editor',
-	// 			'thumbnail',
-	// 			'excerpt',
-	// 			'custom-fields',
-	// 			'author'
-	// 		),
-	// 		'taxonomies'    => array(
-	// 			'faq_categories',
-	// 		),
-	// 		'has_archive'   => true,
-	// 		'rewrite'       => array(
-	// 			'slug' => 'faq',
-	// 		),
-	// 	)
-	// );
+        register_post_type(
+		'faq',
+		array(
+			'labels'        => array(
+				'name'               => __('Faq', 'text_domain'),
+				'singular_name'      => __('Faq', 'text_domain'),
+				'menu_name'          => __('Faq', 'text_domain'),
+				'name_admin_bar'     => __('Faq Item', 'text_domain'),
+				'all_items'          => __('All Items', 'text_domain'),
+				'add_new'            => _x('Add New', 'faq', 'text_domain'),
+				'add_new_item'       => __('Add New Item', 'text_domain'),
+				'edit_item'          => __('Edit Item', 'text_domain'),
+				'new_item'           => __('New Item', 'text_domain'),
+				'view_item'          => __('View Item', 'text_domain'),
+				'search_items'       => __('Search Items', 'text_domain'),
+				'not_found'          => __('No items found.', 'text_domain'),
+				'not_found_in_trash' => __('No items found in Trash.', 'text_domain'),
+				'parent_item_colon'  => __('Parent Items:', 'text_domain'),
+			),
+			'public'        => true,
+			'menu_position' => 7,
+			'menu_icon'		=> 'dashicons-editor-help',
+			'supports'      => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'excerpt',
+				'custom-fields',
+				'author'
+			),
+			'taxonomies'    => array(
+				'faq_categories',
+			),
+			'has_archive'   => true,
+			'rewrite'       => array(
+				'slug' => 'faq',
+			),
+		)
+	);
 
 }
 
@@ -166,20 +166,20 @@ add_action('init', 'prefix_register_taxonomy', 0);
 add_action( 'init', 'create_posttype' );
 function create_posttype() {
 
-//   register_post_type( 'testimonial',
-//     array(
-//       'labels' => array(
-//         'name' => __( 'Testimonials' ),
-//         'singular_name' => __( 'Testimonial' ),
-//       ),
-// //      'taxonomies' => array('category'),
-//       'public' => true,
-// 	  'menu_icon'	=> 'dashicons-testimonial',
-//       'has_archive' => true,
-//       'rewrite' => array('slug' => 'testimonials'),
-//       'supports' => array( 'title' ,'editor', 'author')
-//     )
-//   );
+  register_post_type( 'testimonial',
+    array(
+      'labels' => array(
+        'name' => __( 'Testimonials' ),
+        'singular_name' => __( 'Testimonial' ),
+      ),
+//      'taxonomies' => array('category'),
+      'public' => true,
+	  'menu_icon'	=> 'dashicons-testimonial',
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'testimonials'),
+      'supports' => array( 'title' ,'editor', 'author')
+    )
+  );
 
 //   register_post_type( 'general',
 //     array(
@@ -211,31 +211,31 @@ function create_posttype() {
 //     )
 //   );
 
-//   register_post_type( 'job',
-//     array(
-//       'labels' => array(
-//         'name' => __( 'Jobs' ),
-//         'singular_name' => __( 'Job' ),
-//       ),
-// //      'taxonomies' => array('category'),
-//       'public' => true,
-// 	  'menu_icon'	=> 'dashicons-id-alt',
-//       'has_archive' => false,
-//       'rewrite' => array('slug' => 'jobs'),
-//       'supports' => array( 'title' ,'editor', 'author')
-//     )
-//   );
-  register_post_type( 'fotowoltaika',
+  register_post_type( 'job',
+    array(
+      'labels' => array(
+        'name' => __( 'Jobs' ),
+        'singular_name' => __( 'Job' ),
+      ),
+//      'taxonomies' => array('category'),
+      'public' => true,
+	  'menu_icon'	=> 'dashicons-id-alt',
+      'has_archive' => false,
+      'rewrite' => array('slug' => 'jobs'),
+      'supports' => array( 'title' ,'editor', 'author')
+    )
+  );
+  register_post_type( 'blog',
 		array(
 			'labels' => array(
-			'name' => __( 'Fotowoltaika' ),
-			'singular_name' => __( 'Fotowoltaika' ),
+			'name' => __( 'Blog' ),
+			'singular_name' => __( 'Blog' ),
 			),
 			'taxonomies' => array('category'),
 			'public' => true,
-			'menu_icon'	=> 'dashicons-images-alt',
+			'menu_icon'	=> 'dashicons-welcome-write-blog',
 			'has_archive' => false,
-			'rewrite' => array('slug' => 'projekty'),
+			'rewrite' => array('slug' => 'blog'),
 			'supports' => array( 'title', 'excerpt', 'editor', 'thumbnail')
 		)
 	);

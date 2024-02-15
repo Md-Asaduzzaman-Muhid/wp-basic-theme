@@ -32,7 +32,7 @@
 					<div class="col-lg-3 col-md-6 anima anima-left">
 						<h3 class="footer-title"><?php echo get_bloginfo('name') ?> </h3>
 						
-						<ul class="contact-links m-0 p-0">
+						<ul class="contact-links m-0 p-0">ontact form not found.
 							<li class="wow zoomIn">
 								<?php include(get_template_directory().'/img/icons/phone-solid.svg') ?>
 								<a href="tel:<?php echo trim(get_option('phone'));?>"><?php echo get_option('phone'); ?></a>
@@ -41,8 +41,7 @@
 							<li class="wow zoomIn">
 								<?php include(get_template_directory().'/img/icons/envelope-regular.svg') ?>
 								<a href="mailto:<?php echo get_option('e-mail') ?>"><?php echo get_option('e-mail'); ?></a>
-							</li>
-							<li class="wow zoomIn">
+							</li>ontact form not found.
 								<?php include(get_template_directory().'/img/icons/location-dot-solid.svg') ?>
 								<?php echo get_option('address_line1'); ?><?php echo get_option('address_line2'); ?>
 							</li>
@@ -53,7 +52,7 @@
 							<?php 
 							$locations = get_nav_menu_locations();
 							$menu1 = wp_get_nav_menu_object( $locations['menu-2'] ); ?>
-							<h3 class="footer-title"><?php echo $menu1->name ?: 'Footer Menu' ?></h3>
+							<h3 class="footer-title"><?php echo $menu1->name ?: 'Footer Menu1' ?></h3>
 							<?php wp_nav_menu(
 								array(
 									'theme_location'  => 'footer-menu',
@@ -69,7 +68,7 @@
 						<?php 
 							$locations = get_nav_menu_locations();
 							$menu1 = wp_get_nav_menu_object( $locations['menu-3'] ); ?>
-							<h3 class="footer-title"><?php echo $menu1->name ?: 'Footer Menu' ?></h3>
+							<h3 class="footer-title"><?php echo $menu1->name ?: 'Footer Menu2' ?></h3>
 						
 							<?php wp_nav_menu(
 								array(
@@ -88,7 +87,7 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="copyright text-center">
-					<p class="mb-0"><span>Copyright &copy; <?php echo get_bloginfo('name') ?>.</span> Wszystkie prawa zastrzeżone. <a class="footer_click" href="https://www.iplus.com.pl/" target="_blank">Wykonanie Internet Plus s.c.</a></p>
+					<p class="mb-0"><span>Copyright &copy; <?php echo get_bloginfo('name') ?>.</span> All Rights Reserved</p>
 				</div>
 			</div>
 		</div>

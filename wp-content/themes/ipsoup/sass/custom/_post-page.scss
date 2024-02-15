@@ -1,0 +1,125 @@
+.contact-information{
+    .item{
+        padding: 20px 0;
+        text-align: center;
+        background-color: $primary-color;
+        color: #fff;
+        margin-bottom: 20px;
+        svg{
+            max-height: 40px;
+            max-width: 40px;
+            fill: #fff;
+            margin-bottom: 10px;
+        }
+        a{
+            color: #fff;
+            transition: all .3s ease-in-out;
+            text-decoration: none;
+            &:hover{
+                color: $tmp-color;
+            }
+        }
+
+    }
+}
+
+.page-info-section{
+    .single-info{
+        text-align: center;
+        padding: 20px 0;
+        background-color: $primary-color;
+        
+        h3{
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            color: #fff;
+        }
+        p{
+            margin-bottom: 0;
+            color: #fff;
+        }
+    }
+}
+.blog-single{
+    box-shadow: 5px 5px 5px 0px rgba(224, 224, 224, 1);
+    .description{
+        position: relative;
+        padding: 10px;
+    }
+    h3 a{
+        color: $primary-color;
+    }
+    time{
+        position: absolute;
+        top: -15px;
+        right: 0;
+        padding: 2px 4px;
+        background: #6a7c86;
+        color: #fff;
+    }
+    .thumbnail{
+        position: relative;
+    }
+    .categories{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: end;
+        top: 0;
+        right: 0;
+        .category{
+            background-color: rgba($tmp-color,.5);
+            color: #fff;
+            padding: 5px 10px;
+            margin: 2px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: $tmp-color;
+            }
+        }
+    }
+}
+.title-section-bg{
+    background-color: $tmp-color;
+    min-height: 250px;
+    .page-title-bg{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $primary-color;
+    }
+    .pagination-page{
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+        a{
+            color: #fff;
+            text-decoration: none;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        .divider{
+            padding: 0 5px;
+        }
+    }
+    .home-icon{
+        position: relative;
+        color: transparent;
+        &:before{
+            content: url(./img/icons/home-page.png);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 12px;
+            width: 12px;
+        }
+    }
+    
+}

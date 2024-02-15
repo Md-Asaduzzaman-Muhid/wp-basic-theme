@@ -152,5 +152,171 @@ get_header(); ?>
 	</div>
 </section>
 
+<!-- Works -->
+<section id="portfolio" class="home-section bg-gray">
+    <div class="container">
+    <h2 class="section-title text-center">Some of Our Works</h2>
+      <div class="row">
+        	<div class="col-lg-3 col-md-6 mb-2 mb-md-4">
+				<div class="portfolio-single position-relative">
+					<a href="https://shachroy.com/" target="_blank">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/works/1.jpg" alt="portfolio" />
+					<h4 class="mb-0 work-title"> <span>E-Commerce Website</span></h4>
+					</a>
+				</div>
+			</div>
+            <div class="col-lg-3 col-md-6 mb-2 mb-md-4">
+				<div class="portfolio-single position-relative">
+					<a href="http://www.sylhetibiyashadi.com/" target="_blank">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/works/2.jpg" alt="portfolio" />
+						<h4 class="mb-0 work-title"> <span>Laravel Web Application</span></h4>
+					</a>
+			  	</div>
+			</div>
+            <div class="col-lg-3 col-md-6 mb-2 mb-md-4">
+				<div class="portfolio-single position-relative">
+					<a href="http://sps.com.bd/" target="_blank">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/works/3.jpg" alt="portfolio" />
+						<h4 class="mb-0 work-title"> <span>Custom WordPress Theme</span></h4>
+					</a>
+			  	</div>
+			</div>
+			<div class="col-lg-3 col-md-6 mb-2 mb-md-4">
+				<div class="portfolio-single position-relative">
+					<a href="http://iosoup.com/" target="_blank">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/works/4.jpg" alt="portfolio" />
+						<h4 class="mb-0 work-title"> <span>Custom HTML Theme</span></h4>
+					</a>
+				</div>
+			</div>
+            <div class="col-lg-3 col-md-6 mb-2 mb-md-4">
+				<div class="portfolio-single position-relative">
+					<a href="http://activexitltd.com/" target="_blank">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/works/5.jpg" alt="portfolio" />
+						<h4 class="mb-0 work-title"> <span>Custom WordPress Website</span></h4>
+					</a>
+				</div>
+			</div>
+            <div class="col-lg-3 col-md-6 mb-2 mb-md-4">
+				<div class="portfolio-single position-relative">
+					<a href="http://garmentexbd.com/" target="_blank">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/works/6.jpg" alt="portfolio" />
+						<h4 class="mb-0 work-title"> <span>E-Commerce Website</span></h4>
+					</a>
+				</div>
+			</div>
+            <div class="col-lg-3 col-md-6 mb-2 mb-md-4">
+				<div class="portfolio-single position-relative">
+					<a href="https://inpure.com.bd/" target="_blank" >
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/works/7.jpg" alt="portfolio" />
+						<h4 class="mb-0 work-title"> <span>E-Commerce Website</span></h4>
+					</a>
+				</div>	
+			</div>
+            <div class="col-lg-3 col-md-6 mb-2 mb-md-4">
+				<div class="portfolio-single position-relative">
+					<a href="http://expomela.com/" target="_blank">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/works/8.jpg" alt="portfolio" />
+						<h4 class="mb-0 work-title"> <span>WordPress Event Management</span></h4>
+					</a>
+				</div>
+			</div>
+      	</div>
+    </div>
+</section>
+
+<section class="customer-review-section">
+    <div class="container-fluid position-relative">
+				<div class="customer-review row">
+					<div class="col-md-6">
+						<div class="testi-user-img swiper-container gallery-thumbs">
+						  <div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
+								</div>
+							<div class="swiper-slide">
+								<img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+							</div>
+								<div class="swiper-slide">
+							<img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
+							</div>
+						
+							<div class="swiper-slide">
+								<img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+							</div>
+						  </div>
+					  </div>
+					</div>
+					<div class="user-saying col-md-6">
+						  <div class="swiper-container testimonial">
+								  <!-- Additional required wrapper -->
+								  <div class="swiper-wrapper ">
+									  <!-- Slides -->
+									  <div class="swiper-slide">
+										  <div class="quote">
+												  <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											  <p>
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div class="name">-Ramkishor Verma-</div>
+											  <div class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+										  <div class="quote">
+												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											
+											  <p>
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div class="name">-Ramkishor Verma-</div>
+											  <div class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+										  <div class="quote">
+												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+												  
+											  <p>
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div class="name">-Ramkishor Verma-</div>
+											  <div class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+											  <div class="quote">
+													<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+												 
+												  <p>
+														  “This is best and biggest unified platform
+												  for instant online admission. We can easily
+												  take admission for any course in any institute..“
+												  </p>
+												  <div class="name">-Ramkishor Verma-</div>
+												  <div class="designation">University Student</div>
+												  
+											  </div>
+										  </div>
+									  
+								  </div>
+								  <!-- If we need pagination -->
+								  <div class="swiper-pagination swiper-pagination-white"></div>
+							  
+							  </div>
+					</div>
+				</div>
+    </div>
+</section>
+
 
 <?php get_footer(); ?>

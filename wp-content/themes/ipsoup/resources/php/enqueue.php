@@ -7,7 +7,7 @@ define( 'DISALLOW_FILE_EDIT', true );
 function load_styles_and_scripts() {
   wp_enqueue_script('jquery', get_template_directory_uri() . '/resources/js/jquery-3.7.1.min', false, '3.7.1', true);
   wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/resources/js/bootstrap.min.js', array( 'jquery' ), '',  true);
-  wp_enqueue_script('swiper-js', get_template_directory_uri() . '/resources/js/swiper-element-bundle.min.js');
+  wp_enqueue_script('swiper-js', get_template_directory_uri() . '/resources/js/swiper-bundle.min.js');
   wp_enqueue_script('leaflet-js', get_template_directory_uri()."/resources/js/leaflet.js", false, false, true);
   wp_enqueue_script('wow', get_template_directory_uri() . '/resources/js/wow.js', false, false, true);
   wp_enqueue_script('global', get_template_directory_uri() . '/resources/js/global.js');
