@@ -31,11 +31,11 @@ get_header(); ?>
                             <p><a href="tel:<?php echo str_replace(array('(',')',' ','-','.'), "", get_option('phone')); ?>"><?php echo get_option('phone'); ?> </a></p>
                         </div>
                         <div class="item">
-                            <?php include(get_template_directory() . '/img/icons/envelope-solid.svg') ?>
-                            <p><a href="mailto:<?php echo get_option('mail'); ?>"><?php echo get_option('mail'); ?></a></p>
+                            <?php include(get_template_directory() . '/img/icons/envelope-regular.svg') ?>
+                            <p><a href="mailto:<?php echo get_option('e-mail'); ?>"><?php echo get_option('e-mail'); ?></a></p>
                         </div>
                         <div class="item">
-                            <h4>śledź nas na</h4>
+                            <h4>Follow Us</h4>
                             <ul class="social-link justify-content-center p-0">
                                 <?php if(get_option('facebook')): ?>
                                 <li class="list-inline-item">
@@ -71,7 +71,7 @@ get_header(); ?>
                 </div>
                 <div class="col-md-8">
                     <div class="main-form">
-                        <?php echo do_shortcode('[contact-form-7 id="f70a46e" title="Contact form"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="981ade5" title="Contact form 1"]'); ?>
                     </div>
                 </div>
                 

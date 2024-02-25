@@ -5,35 +5,44 @@ Template Name: Portfolio
 get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<section class="title-section-bg position-relative">
-    <div class="container">
-        <div class="pagination-page">
-            <a href="<?php echo site_url(); ?>" class="home-icon1" ></a>
-            <span class="divider">/</span>
-            <span class="item-now"><?php echo get_the_title(); ?></span>
+<section class="title-section position-relative">
+        <?php if(get_field('inner_banner')):?>
+        <div class="inner-banner">
+            <img class="img-fluid" src="<?php echo get_field('inner_banner'); ?>" alt="banner">
         </div>
+        <?php else: ?>
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/inner-banner.jpg" alt="banner">
+        <?php endif ?>
+        <h1 class="page-title"><?php echo get_the_title(); ?></h1>
+</section>
+<?php endwhile; endif; ?>
+
+<section class="portfolio-page-section py-3 py-md-5">
+    <div class="container">
+        <?php
+            $args = array( 
+            'post_type' => 'portfolios', 
+            'showposts' => 12,
+            'orderby' => 'menu_order',
+            'orderby' => 'date',  
+            'order' => 'DESC' );
+            $loop = new WP_Query( $args );
+        ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+            <div class="portfolio-single p-3 p-md-4">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" alt="thumbnail">
+                    </div>
+                    <div class="col-8">
+                        <h3><?php echo get_the_title(); ?></h3>
+                        <p><?php echo get_the_excerpt(); ?></p>
+                        <a class="btn-1" target="_blank" href="<?php echo esc_attr( get_field('link_of_the_project') ); ?>">Visit  now</a>
+                    </div>
+                </div>
+            </div>
+        <?php endwhile; ?> 
     </div>
-</section><?php endwhile; endif; ?>
-asdasd
-
-
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'iosofroe_wp888' );
-
-/** Database username */
-define( 'DB_USER', 'iosofroe_wp888' );
-
-/** Database password */
-define( 'DB_PASSWORD', 'aFp]20]Eq-1@S9-1' );
-
-/** Database hostname */
-define( 'DB_HOST', 'localhost' );
-
-/** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
-
-/** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+</section>
 
 <?php get_footer(); ?>

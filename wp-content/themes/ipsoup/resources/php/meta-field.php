@@ -172,7 +172,41 @@ acf_add_local_field_group(array (
 	'active' => 1,
 	'description' => '',
 ));
-
+//Portfolio
+acf_add_local_field_group(array (
+	'key' => 'group_5a9fc87f22d3f',
+	'title' => 'Portfolio Information',
+	'fields' => array (
+		
+		array (
+			'key' => 'field_5a9fc8b73a23',
+			'label' => 'Link of the project',
+			'name' => 'link_of_the_project',
+			'type' => 'url',
+			'value' => NULL,
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+		),
+	),
+	'location' => array (
+		array (
+			array (
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'portfolios',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'acf_after_title',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => 1,
+	'description' => '',
+));
 
 
 endif;

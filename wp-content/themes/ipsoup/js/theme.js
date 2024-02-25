@@ -1,4 +1,7 @@
 jQuery(document).ready(function($) {
+
+    //animation
+    new WOW().init();
     
     /*  Header Sticky
     ============================================= */
@@ -124,9 +127,13 @@ let TopPlusOpen_Grey = L.tileLayer('http://sgx.geodatenzentrum.de/wmts_topplus_o
 	maxZoom: 20,
 	attribution: 'Map data: &copy; <a href="http://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a>'
 });
-
+var CartoDB_Voyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	maxZoom: 20
+});
 // map.addLayer(OpenStreetMap_DE);
-map.addLayer(TopPlusOpen_Grey);
+map.addLayer(CartoDB_Voyager);
 
 // points
 // map.addLayer(routes);

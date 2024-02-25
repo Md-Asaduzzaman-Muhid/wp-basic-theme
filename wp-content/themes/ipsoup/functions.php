@@ -42,7 +42,7 @@
     register_nav_menus( array(
         'top-menu'    => __( 'Top Menu', '' ),
         'menu-2' => __( 'Menu 2', 'menu-2' ),
-        'menu-3' => __( 'Menu 3', 'menu-3' ),
+        'about' => __( 'About', 'about' ),
     ));
 
     add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);

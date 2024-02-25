@@ -32,7 +32,7 @@
 					<div class="col-lg-3 col-md-6 anima anima-left">
 						<h3 class="footer-title"><?php echo get_bloginfo('name') ?> </h3>
 						
-						<ul class="contact-links m-0 p-0">ontact form not found.
+						<ul class="contact-links m-0 p-0">
 							<li class="wow zoomIn">
 								<?php include(get_template_directory().'/img/icons/phone-solid.svg') ?>
 								<a href="tel:<?php echo trim(get_option('phone'));?>"><?php echo get_option('phone'); ?></a>
@@ -41,7 +41,8 @@
 							<li class="wow zoomIn">
 								<?php include(get_template_directory().'/img/icons/envelope-regular.svg') ?>
 								<a href="mailto:<?php echo get_option('e-mail') ?>"><?php echo get_option('e-mail'); ?></a>
-							</li>ontact form not found.
+							</li>
+							<li class="wow zoomIn">
 								<?php include(get_template_directory().'/img/icons/location-dot-solid.svg') ?>
 								<?php echo get_option('address_line1'); ?><?php echo get_option('address_line2'); ?>
 							</li>
@@ -57,7 +58,7 @@
 								array(
 									'theme_location'  => 'footer-menu',
 									'container_class' => 'collapse navbar-collapse',
-									'container_id'    => 'mainNavigation',
+									'container_id'    => 'footerNav2',
 									'menu_class'      => 'navbar-nav ms-auto'
 								)
 							); ?>
@@ -72,9 +73,9 @@
 						
 							<?php wp_nav_menu(
 								array(
-									'theme_location'  => 'about',
+									'theme_location'  => 'about1',
 									'container_class' => 'collapse navbar-collapse',
-									'container_id'    => 'navbarToggleExternalContent',
+									'container_id'    => 'footerNav1',
 									'menu_class'      => 'navbar-nav'
 								)
 							); ?>

@@ -5,85 +5,85 @@
  */
 function prefix_register_post_type()
 {
-	register_post_type(
-		'portfolio',
-		array(
-			'labels'        => array(
-				'name'               => __('Portfolio', 'text_domain'),
-				'singular_name'      => __('Portfolio', 'text_domain'),
-				'menu_name'          => __('Portfolio', 'text_domain'),
-				'name_admin_bar'     => __('Portfolio Item', 'text_domain'),
-				'all_items'          => __('All Items', 'text_domain'),
-				'add_new'            => _x('Add New', 'portfolio', 'text_domain'),
-				'add_new_item'       => __('Add New Item', 'text_domain'),
-				'edit_item'          => __('Edit Item', 'text_domain'),
-				'new_item'           => __('New Item', 'text_domain'),
-				'view_item'          => __('View Item', 'text_domain'),
-				'search_items'       => __('Search Items', 'text_domain'),
-				'not_found'          => __('No items found.', 'text_domain'),
-				'not_found_in_trash' => __('No items found in Trash.', 'text_domain'),
-				'parent_item_colon'  => __('Parent Items:', 'text_domain'),
-			),
-			'public'        => true,
-			'menu_position' => 6,
-			'menu_icon'		=> 'dashicons-format-gallery',
-			'supports'      => array(
-				'title',
-				'editor',
-				'thumbnail',
-				'excerpt',
-				'custom-fields',
-				'author'
-			),
-			'taxonomies'    => array(
-				'portfolio_categories',
-			),
-			'has_archive'   => true,
-			'rewrite'       => array(
-				'slug' => 'portfolio',
-			),
-		)
-	);
+	// register_post_type(
+	// 	'portfolio',
+	// 	array(
+	// 		'labels'        => array(
+	// 			'name'               => __('Portfolio', 'text_domain'),
+	// 			'singular_name'      => __('Portfolio', 'text_domain'),
+	// 			'menu_name'          => __('Portfolio', 'text_domain'),
+	// 			'name_admin_bar'     => __('Portfolio Item', 'text_domain'),
+	// 			'all_items'          => __('All Items', 'text_domain'),
+	// 			'add_new'            => _x('Add New', 'portfolio', 'text_domain'),
+	// 			'add_new_item'       => __('Add New Item', 'text_domain'),
+	// 			'edit_item'          => __('Edit Item', 'text_domain'),
+	// 			'new_item'           => __('New Item', 'text_domain'),
+	// 			'view_item'          => __('View Item', 'text_domain'),
+	// 			'search_items'       => __('Search Items', 'text_domain'),
+	// 			'not_found'          => __('No items found.', 'text_domain'),
+	// 			'not_found_in_trash' => __('No items found in Trash.', 'text_domain'),
+	// 			'parent_item_colon'  => __('Parent Items:', 'text_domain'),
+	// 		),
+	// 		'public'        => true,
+	// 		'menu_position' => 6,
+	// 		'menu_icon'		=> 'dashicons-format-gallery',
+	// 		'supports'      => array(
+	// 			'title',
+	// 			'editor',
+	// 			'thumbnail',
+	// 			'excerpt',
+	// 			'custom-fields',
+	// 			'author'
+	// 		),
+	// 		'taxonomies'    => array(
+	// 			'portfolio_categories',
+	// 		),
+	// 		'has_archive'   => true,
+	// 		'rewrite'       => array(
+	// 			'slug' => 'portfolio',
+	// 		),
+	// 	)
+	// );
 
-        register_post_type(
-		'faq',
-		array(
-			'labels'        => array(
-				'name'               => __('Faq', 'text_domain'),
-				'singular_name'      => __('Faq', 'text_domain'),
-				'menu_name'          => __('Faq', 'text_domain'),
-				'name_admin_bar'     => __('Faq Item', 'text_domain'),
-				'all_items'          => __('All Items', 'text_domain'),
-				'add_new'            => _x('Add New', 'faq', 'text_domain'),
-				'add_new_item'       => __('Add New Item', 'text_domain'),
-				'edit_item'          => __('Edit Item', 'text_domain'),
-				'new_item'           => __('New Item', 'text_domain'),
-				'view_item'          => __('View Item', 'text_domain'),
-				'search_items'       => __('Search Items', 'text_domain'),
-				'not_found'          => __('No items found.', 'text_domain'),
-				'not_found_in_trash' => __('No items found in Trash.', 'text_domain'),
-				'parent_item_colon'  => __('Parent Items:', 'text_domain'),
-			),
-			'public'        => true,
-			'menu_position' => 7,
-			'menu_icon'		=> 'dashicons-editor-help',
-			'supports'      => array(
-				'title',
-				'editor',
-				'thumbnail',
-				'excerpt',
-				'custom-fields',
-				'author'
-			),
-			'taxonomies'    => array(
-				'faq_categories',
-			),
-			'has_archive'   => true,
-			'rewrite'       => array(
-				'slug' => 'faq',
-			),
-		)
-	);
+    //     register_post_type(
+	// 	'faq',
+	// 	array(
+	// 		'labels'        => array(
+	// 			'name'               => __('Faq', 'text_domain'),
+	// 			'singular_name'      => __('Faq', 'text_domain'),
+	// 			'menu_name'          => __('Faq', 'text_domain'),
+	// 			'name_admin_bar'     => __('Faq Item', 'text_domain'),
+	// 			'all_items'          => __('All Items', 'text_domain'),
+	// 			'add_new'            => _x('Add New', 'faq', 'text_domain'),
+	// 			'add_new_item'       => __('Add New Item', 'text_domain'),
+	// 			'edit_item'          => __('Edit Item', 'text_domain'),
+	// 			'new_item'           => __('New Item', 'text_domain'),
+	// 			'view_item'          => __('View Item', 'text_domain'),
+	// 			'search_items'       => __('Search Items', 'text_domain'),
+	// 			'not_found'          => __('No items found.', 'text_domain'),
+	// 			'not_found_in_trash' => __('No items found in Trash.', 'text_domain'),
+	// 			'parent_item_colon'  => __('Parent Items:', 'text_domain'),
+	// 		),
+	// 		'public'        => true,
+	// 		'menu_position' => 7,
+	// 		'menu_icon'		=> 'dashicons-editor-help',
+	// 		'supports'      => array(
+	// 			'title',
+	// 			'editor',
+	// 			'thumbnail',
+	// 			'excerpt',
+	// 			'custom-fields',
+	// 			'author'
+	// 		),
+	// 		'taxonomies'    => array(
+	// 			'faq_categories',
+	// 		),
+	// 		'has_archive'   => true,
+	// 		'rewrite'       => array(
+	// 			'slug' => 'faq',
+	// 		),
+	// 	)
+	// );
 
 }
 
@@ -225,10 +225,10 @@ function create_posttype() {
       'supports' => array( 'title' ,'editor', 'author')
     )
   );
-  register_post_type( 'blog',
+  register_post_type( 'blogs',
 		array(
 			'labels' => array(
-			'name' => __( 'Blog' ),
+			'name' => __( 'Blogs' ),
 			'singular_name' => __( 'Blog' ),
 			),
 			'taxonomies' => array('category'),
@@ -236,6 +236,20 @@ function create_posttype() {
 			'menu_icon'	=> 'dashicons-welcome-write-blog',
 			'has_archive' => false,
 			'rewrite' => array('slug' => 'blog'),
+			'supports' => array( 'title', 'excerpt', 'editor', 'thumbnail')
+		)
+	);
+	register_post_type( 'portfolios',
+		array(
+			'labels' => array(
+			'name' => __( 'Portfolios' ),
+			'singular_name' => __( 'Portfolio' ),
+			),
+			'taxonomies' => array('category'),
+			'public' => true,
+			'menu_icon'	=> 'dashicons-welcome-write-blog',
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'portfolio'),
 			'supports' => array( 'title', 'excerpt', 'editor', 'thumbnail')
 		)
 	);

@@ -7,8 +7,9 @@
 <body <?php body_class(); ?>>
 <header class="header">
 	<div class="header-top bg-dark py-3">
-		<div class="container">
-			<ul class="social-links m-0 p-0 text-end">
+		<div class="container d-flex justify-content-between align-items-center">
+			<marquee class="text-white w-md-25 w-50">Welcome to ioSoup digital solution agency</marquee>
+			<ul class="social-links m-0 p-0">
 				<li class="wow zoomIn">
 					<a href="<?php echo get_option('facebook') ?>" target="_blank">
 					<?php include(get_template_directory().'/img/icons/facebook-f.svg') ?></a>
