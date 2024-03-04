@@ -19,7 +19,7 @@ get_header(); ?>
 			<div class="col-md-4">
 				<div class="feature-single d-flex">
 					<div class="icon-wrapper d-flex align-items-center justify-content-center">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/png/puzzle.png" alt="feature">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/png/case.png" alt="feature">
 					</div>
 					<div class="content">
 						<h3>Expertise and Experience</h3>
@@ -41,7 +41,7 @@ get_header(); ?>
 			<div class="col-md-4">
 				<div class="feature-single d-flex">
 					<div class="icon-wrapper d-flex align-items-center justify-content-center">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/png/puzzle.png" alt="feature">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/png/review.png" alt="feature">
 					</div>
 					<div class="content">
 						<h3>100% Dedicated Support</h3>
@@ -226,96 +226,52 @@ get_header(); ?>
 </section>
 
 <section class="customer-review-section">
-    <div class="container-fluid position-relative">
-				<div class="customer-review row">
-					<div class="col-md-6">
-						<div class="testi-user-img swiper-container gallery-thumbs">
-						  <div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
-								</div>
-							<div class="swiper-slide">
-								<img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-							</div>
-								<div class="swiper-slide">
-							<img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
-							</div>
-						
-							<div class="swiper-slide">
-								<img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-							</div>
-						  </div>
-					  </div>
-					</div>
-					<div class="user-saying col-md-6">
-						  <div class="swiper-container testimonial">
-								  <!-- Additional required wrapper -->
-								  <div class="swiper-wrapper ">
-									  <!-- Slides -->
-									  <div class="swiper-slide">
-										  <div class="quote">
-												  <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-											  <p>
-													  “This is best and biggest unified platform
-											  for instant online admission. We can easily
-											  take admission for any course in any institute..“
-											  </p>
-											  <div class="name">-Ramkishor Verma-</div>
-											  <div class="designation">University Student</div>
-											  
-										  </div>
-									  </div>
-									  <div class="swiper-slide">
-										  <div class="quote">
-												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-											
-											  <p>
-													  “This is best and biggest unified platform
-											  for instant online admission. We can easily
-											  take admission for any course in any institute..“
-											  </p>
-											  <div class="name">-Ramkishor Verma-</div>
-											  <div class="designation">University Student</div>
-											  
-										  </div>
-									  </div>
-									  <div class="swiper-slide">
-										  <div class="quote">
-												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-												  
-											  <p>
-													  “This is best and biggest unified platform
-											  for instant online admission. We can easily
-											  take admission for any course in any institute..“
-											  </p>
-											  <div class="name">-Ramkishor Verma-</div>
-											  <div class="designation">University Student</div>
-											  
-										  </div>
-									  </div>
-									  <div class="swiper-slide">
-											  <div class="quote">
-													<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-												 
-												  <p>
-														  “This is best and biggest unified platform
-												  for instant online admission. We can easily
-												  take admission for any course in any institute..“
-												  </p>
-												  <div class="name">-Ramkishor Verma-</div>
-												  <div class="designation">University Student</div>
-												  
-											  </div>
-										  </div>
-									  
-								  </div>
-								  <!-- If we need pagination -->
-								  <div class="swiper-pagination swiper-pagination-white"></div>
-							  
-							  </div>
+	<div class="container">
+		<!-- Swiper -->
+		<div class="swiper-container position-relative">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide text-center">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/png/person.png" alt="reviewer">
+					<div class="text-wrapper">
+						<h3>John Doe</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Modi nostrum doloribus dignissimos esse molestias distinctio aut enim non,
+							accusamus minus laborum sequi, voluptas reiciendis iure ipsum quaerat nam 
+							vitae perspiciatis.</p>
+						<div class="rating d-flex">
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+						</div>
 					</div>
 				</div>
-    </div>
+				<div class="swiper-slide text-center">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/png/person-female.png" alt="reviewer">
+					<div class="text-wrapper">
+						<h3>John Doe</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Modi nostrum doloribus dignissimos esse molestias distinctio aut enim non,
+							accusamus minus laborum sequi, voluptas reiciendis iure ipsum quaerat nam 
+							vitae perspiciatis.</p>
+						<div class="rating d-flex">
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+							<?php include(get_template_directory().'/img/icons/star-solid.svg') ?>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+			
+	</div>
 </section>
 
 

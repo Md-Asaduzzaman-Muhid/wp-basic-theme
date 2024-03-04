@@ -49,79 +49,59 @@ jQuery(document).ready(function($) {
            scrollTop: 0
        }, 1500);
    })
-
+});
 /*  Review slider function
     ============================================= */
-   let galleryThumbs = new Swiper('.gallery-thumbs', {
-	effect: 'coverflow',
-	grabCursor: true,
-	centeredSlides: true,
-	slidesPerView: '2',
-	// coverflowEffect: {
-	//   rotate: 50,
-	//   stretch: 0,
-	//   depth: 100, 
-	//   modifier: 1,
-	//   slideShadows : true,
-	// },
-	
-	// coverflowEffect: {
-	// rotate: 0,
-	// stretch: 0,
-	// depth: 50,
-	// modifier: 6,
-	// slideShadows : false,
-	//   },
-	  
+/*=============== SWIPER JS ===============*/
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // init: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    }
   });
-  
-  
-let galleryTop = new Swiper('.swiper-container.testimonial', {
-	speed: 400,
-	spaceBetween: 50,
-	autoplay: {
-	  delay: 3000,
-	  disableOnInteraction: false,
-	},
-	direction: 'vertical',
-	pagination: {
-	  clickable: true,
-	  el: '.swiper-pagination',
-	  type: 'bullets',
-	},
-	thumbs: {
-		swiper: galleryThumbs
-	  }
-  });
-  
-
-   
-
-});
-
 
 let map = L.map('map');
 map.setView([50.83322306601526, 19.06653821433392], 15);
-// let routes = Array();
-// let osmUrl = 'https://{s}.tiles.mapbox.com/v3/examples.map-20v6611k/{z}/{x}/{y}.png';
-// let osm = new L.TileLayer(osmUrl, {
-//     minZoom: 5,
-//     maxZoom: 18,
-//     opacity: 0.7,
-// });
+let routes = Array();
+let osmUrl = 'https://{s}.tiles.mapbox.com/v3/examples.map-20v6611k/{z}/{x}/{y}.png';
+let osm = new L.TileLayer(osmUrl, {
+    minZoom: 5,
+    maxZoom: 18,
+    opacity: 0.7,
+});
 
-// let shopIcon = L.icon({
-//     iconUrl: './wp-content/themes/ipsoup/img/icons/map-inside.png',
-//     iconSize:     [116, 150], // size of the icon
-//     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-//     shadowAnchor: [4, 62],  // the same for the shadow
-//     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-// });
-// L.marker([50.83322306601526, 19.06653821433392], {icon: shopIcon}).addTo(map);
-// let OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-// 	maxZoom: 18,
-// 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-// });
+let shopIcon = L.icon({
+    iconUrl: window.location.origin+'/wordpress/wp-basic-theme/wp-content/themes/ipsoup/img/png/location.png',
+    iconSize:     [116, 150], // size of the icon
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+L.marker([50.83322306601526, 19.06653821433392], {icon: shopIcon}).addTo(map);
+let OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
 
 let TopPlusOpen_Grey = L.tileLayer('http://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web_grau/default/WEBMERCATOR/{z}/{y}/{x}.png', {
 	maxZoom: 20,
@@ -136,4 +116,4 @@ var CartoDB_Voyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles
 map.addLayer(CartoDB_Voyager);
 
 // points
-// map.addLayer(routes);
+map.addLayer(routes);

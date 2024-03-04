@@ -587,6 +587,9 @@ span.wprmenu_icon.wprmenu_icon_par {
   color: #7620C1;
 }
 
+/* ================================
+About
+================================= */
 .feature-single img {
   max-width: 70px;
 }
@@ -602,6 +605,9 @@ span.wprmenu_icon.wprmenu_icon_par {
   background-color: #7620C1;
 }
 
+/* ================================
+Counter
+================================= */
 .counter-section .row > *:first-child {
   border-radius: 6px 0 0 6px;
 }
@@ -625,121 +631,141 @@ span.wprmenu_icon.wprmenu_icon_par {
   font-weight: 600;
 }
 
-.customer-review-section {
+/* ================================
+Testimonial
+================================= */
+.card__container {
+  padding-block: 5rem;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
   overflow: hidden;
 }
 
-.testimonial .name {
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 0.04em;
-  line-height: 35px;
-  text-align: left;
-}
-.testimonial .designation {
-  font-size: 14px;
-  letter-spacing: 0.04em;
-  text-align: left;
-  color: #fff;
-  opacity: 0.65;
+.card__article {
+  width: 300px; /* Remove after adding swiper js */
+  border-radius: 1.25rem;
+  overflow: hidden;
 }
 
-.unt {
-  margin-bottom: 20px;
-  margin-top: 60px;
-}
-
-.hero-text {
-  font-size: 30px;
-  letter-spacing: 0.02em;
-  color: #fff;
-}
-
-.gallery-thumbs {
-  height: 100%;
-}
-.gallery-thumbs .swiper-wrapper {
-  align-items: center;
-}
-.gallery-thumbs .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 250px !important;
-  height: 330px;
+.card__image {
   position: relative;
-}
-.gallery-thumbs .swiper-slide img {
-  filter: contrast(0.5) blur(1px);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.gallery-thumbs .swiper-slide-active img {
-  filter: contrast(1) blur(0px) !important;
+  background-color: #7620C1;
+  padding-top: 1.5rem;
+  margin-bottom: -0.75rem;
 }
 
-.gallery-thumbs .swiper-wrapper {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.card__data {
+  background-color: #7620C1;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
-.customer-review .quote {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
+.card__img {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
-.swiper-container.testimonial {
-  height: 100vh;
+.card__shadow {
+  width: 200px;
+  height: 200px;
+  background-color: #7620C1;
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
 }
 
-.customer-review .user-saying {
-  background: #7620C1;
+.card__name {
+  color: #7620C1;
+  margin-bottom: 0.75rem;
+}
+
+.card__description {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.card__button {
+  display: inline-block;
+  background-color: #7620C1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
   color: #fff;
-  height: 100%;
+  font-weight: 600;
 }
 
-.testi-user-img {
-  width: 40%;
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
 }
 
-.customer-review {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: #7620C1;
+  display: none;
 }
 
-.customer-review .quote p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.8;
-  font-style: italic;
-  margin: 0;
+.swiper-button-prev {
+  left: 0;
 }
 
-.quote-icon {
-  width: 38px;
-  display: block;
-  margin-bottom: 30px;
+.swiper-button-next {
+  right: 0;
 }
 
+.swiper-pagination-bullet {
+  background-color: hsl(212, 32%, 40%);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7620C1;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
+}
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .card__container {
+    max-width: 1120px;
+  }
+  .swiper-button-prev {
+    left: -1rem;
+  }
+  .swiper-button-next {
+    right: -1rem;
+  }
+}
 /* ================================
 Works
 ================================= */
