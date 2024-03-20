@@ -15,11 +15,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /wordpress/wp-basic-theme/
+RewriteBase /wp/wp-basic-theme/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wordpress/wp-basic-theme/index.php [L]
+RewriteRule . /wp/wp-basic-theme/index.php [L]
 </IfModule>
 
 # END WordPress
