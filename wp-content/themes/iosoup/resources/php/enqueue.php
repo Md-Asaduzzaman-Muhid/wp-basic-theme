@@ -17,14 +17,16 @@ function load_styles_and_scripts() {
   wp_enqueue_script('lightbox-js', get_template_directory_uri() . '/resources/js/lightbox.min.js', false, false, true);
 
   wp_enqueue_script('global', get_template_directory_uri() . '/resources/js/global.js');
-  wp_enqueue_script('theme', get_template_directory_uri() . '/js/theme.js', false, false, true);
 
-  wp_enqueue_style('style', get_template_directory_uri()."/style.css");
+
+ 
   wp_enqueue_style('bootstrap-css', get_template_directory_uri()."/resources/css/bootstrap.min.css");
   // wp_enqueue_style('leaflet-style', get_template_directory_uri()."/resources/css/leaflet.css");
   wp_enqueue_style('owl-style', get_template_directory_uri()."/resources/css/owl.carousel.min.css");
   wp_enqueue_style('animate-style', get_template_directory_uri()."/resources/css/animate.min.css");
   wp_enqueue_style('lightbox-style', get_template_directory_uri()."/resources/css/lightbox.min.css");
+  wp_enqueue_script('theme', get_template_directory_uri() . '/js/theme.js', false, false, true);
+  wp_enqueue_style('style', get_template_directory_uri()."/style.css");
 }
 
 
@@ -75,7 +77,7 @@ $my_options[] = array('e-mail', 'E-mail');
 $my_options[] = array('address', 'Adres');
 $my_options[] = array('address_line1', 'Adres - linia 1');
 $my_options[] = array('address_line2', 'Adres - linia 2');
-$my_options[] = array('address_line3', 'Adres - linia 3');
+$my_options[] = array('opening_hour', 'Opening Hour');
 $my_options[] = array('facebook', 'Facebook');
 $my_options[] = array('twitter-x', 'Twitter-X');
 $my_options[] = array('instagram', 'Instagram');

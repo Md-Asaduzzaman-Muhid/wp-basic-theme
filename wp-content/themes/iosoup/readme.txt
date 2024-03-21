@@ -1,5 +1,5 @@
 To run sass(go to the directory of theme):
-cd C:\xampp\htdocs\pl\bk\wp-content\themes\pk
+cd C:\xampp\htdocs\WP\wp-basic-theme\wp-content\themes\iosoup
 
 
 download ruby or sass and compiler and run 

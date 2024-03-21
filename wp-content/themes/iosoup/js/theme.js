@@ -179,6 +179,28 @@
       });
 
   })(jQuery);
+
+  const allCards = document.querySelectorAll(".card__base");
+
+window.addEventListener("mousemove", (ev) => {
+
+  allCards.forEach((e) => {
+    const blob = e.querySelector(".blob");
+    const fblob = e.querySelector(".fakeblob");
+    
+    const rec = fblob.getBoundingClientRect();
+    
+    blob.animate([{
+      transform: `translate(${ev.clientX - rec.left - (rec.width / 2)}px,${ev.clientY - rec.top - (rec.height / 2)}px)`,
+  }],
+  {
+    duration: 300,
+    fill: "forwards",
+  }
+  );
+  });
+  
+});
 // let map = L.map('map');
 // map.setView([50.83322306601526, 19.06653821433392], 15);
 // let routes = Array();

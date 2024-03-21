@@ -55,9 +55,19 @@ $colors: (
     gray: $gray-600,
     gray-dark: $gray-800,
 ) !default;
+.fw-medium {
+    font-weight: 500 !important;
+}
 
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-black {
+    font-weight: 900 !important;
+}
 
 $primary-color: #7620C1;
-$tmp-color: #01FEF4;
-$tmp-dark: #404040;
-$hover-color: #01FEF4;
+$tmpcolor: #01FEF4;
+$tmpblack: #353535;
+$tmpwhite: #F5F5F5;

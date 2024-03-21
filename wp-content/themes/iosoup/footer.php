@@ -1,60 +1,89 @@
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-		<div class="container py-5">
-				<div class="row g-5">
-						<div class="col-lg-3 col-md-6">
-								<h4 class="text-light mb-4">Address</h4>
-								<p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-								<p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-								<p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-								<div class="d-flex pt-2">
-										<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-										<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-										<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-										<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-								</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-								<h4 class="text-light mb-4">Services</h4>
-								<a class="btn btn-link" href="">General Carpentry</a>
-								<a class="btn btn-link" href="">Furniture Remodeling</a>
-								<a class="btn btn-link" href="">Wooden Floor</a>
-								<a class="btn btn-link" href="">Wooden Furniture</a>
-								<a class="btn btn-link" href="">Custom Carpentry</a>
-						</div>
-						<div class="col-lg-3 col-md-6">
-								<h4 class="text-light mb-4">Quick Links</h4>
-								<a class="btn btn-link" href="">About Us</a>
-								<a class="btn btn-link" href="">Contact Us</a>
-								<a class="btn btn-link" href="">Our Services</a>
-								<a class="btn btn-link" href="">Terms & Condition</a>
-								<a class="btn btn-link" href="">Support</a>
-						</div>
-						<div class="col-lg-3 col-md-6">
-								<h4 class="text-light mb-4">Newsletter</h4>
-								<p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-								<div class="position-relative mx-auto" style="max-width: 400px;">
-										<input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-										<button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-								</div>
-						</div>
-				</div>
-		</div>
-		<div class="container">
-				<div class="copyright">
-						<div class="row">
-								<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-										&copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-								</div>
-								<div class="col-md-6 text-center text-md-end">
-										<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-										Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-								</div>
-						</div>
-				</div>
-		</div>
-</div>
-<!-- Footer End -->
+<footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Contact Us</h4>
+            <p><?php echo get_option('address_line1'); ?></p>
+			<p><?php echo get_option('address_line2'); ?></p>
+            <p><a href="mailto:<?php echo get_option('e-mail') ?>"><?php echo get_option('e-mail'); ?></a></p>
+            <p><a href="tel:<?php echo get_option('phone') ?>"><?php echo get_option('phone'); ?></a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Free Apps</a></li>
+              <li><a href="#">App Engine</a></li>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">App News</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">App Dev Team</a></li>
+              <li><a href="#">Digital Web</a></li>
+              <li><a href="#">Normal Apps</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About ioSoup</h4>
+            <div class="logo"> 
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo" title="logo">
+            </div>
+            <p>With a presence spanning across two continents – Asia and Europe – our agency is dedicated to providing cutting-edge solutions tailored to meet your unique needs.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2024 ioSoup. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 	<?php wp_footer();?>

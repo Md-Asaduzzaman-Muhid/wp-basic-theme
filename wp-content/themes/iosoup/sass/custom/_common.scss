@@ -1,22 +1,19 @@
 /********** Template CSS **********/
-:root {
-    --primary: #AB7442;
-    --light: #F5F5F5;
-    --dark: #353535;
-}
 
-.fw-medium {
-    font-weight: 500 !important;
-}
 
-.fw-bold {
-    font-weight: 700 !important;
-}
+a{
+    text-decoration: none;
+    color: $primary-color;
 
-.fw-black {
-    font-weight: 900 !important;
 }
-
+.whole-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .back-to-top {
     position: fixed;
     display: none;
@@ -99,7 +96,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: $primary-color;
 }
 
 @media (max-width: 991.98px) {
@@ -119,8 +116,8 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
-    font-weight: 500;
+    color: $tmpblack;
+    font-weight: 700;
 }
 
 .navbar-light.sticky-top {
@@ -201,8 +198,8 @@
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: $primary-color;
+    border-color: $primary-color;
 }
 
 .header-carousel .owl-dots {
@@ -239,8 +236,8 @@
 }
 
 .header-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: $primary-color;
+    border-color: $primary-color;
 }
 
 .page-header {
@@ -249,7 +246,7 @@
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    color: var(--light);
+    color: tmpwhite;
 }
 
 
@@ -271,7 +268,7 @@
     width: 45px;
     height: 5px;
     bottom: 0;
-    background: var(--dark);
+    background: $tmpblack;
 }
 
 .section-title h1::before {
@@ -349,7 +346,7 @@
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
-    color: var(--dark);
+    color: $tmpblack;
     cursor: pointer;
     transition: .5s;
     border-bottom: 2px solid transparent;
@@ -357,8 +354,8 @@
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
-    color: var(--primary);
-    border-color: var(--primary);
+    color: $primary-color;
+    border-color: $primary-color;
 }
 
 .portfolio-item img {
@@ -443,13 +440,13 @@
 }
 
 .team-item .team-social .btn {
-    color: var(--primary);
+    color: $primary-color;
     background: #FFFFFF;
 }
 
 .team-item .team-social .btn:hover {
     color: #FFFFFF;
-    background: var(--primary);
+    background: $primary-color;
 }
 
 .team-item:hover .team-social {
@@ -495,7 +492,7 @@
 }
 
 .testimonial-carousel .owl-item .testimonial-text {
-    border: 5px solid var(--light);
+    border: 5px solid tmpwhite;
     transform: scale(.8);
     transition: .5s;
 }
@@ -525,14 +522,14 @@
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next {
     position: relative;
-    color: var(--primary);
+    color: $primary-color;
     font-size: 45px;
     transition: .5s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    color: var(--dark);
+    color: $tmpblack;
 }
 
 
@@ -562,7 +559,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url('./img/footer.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -573,13 +570,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
+    color: tmpwhite;
     border: 1px solid #FFFFFF;
     transition: .3s;
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: $primary-color;
 }
 
 .footer .btn.btn-link {
@@ -603,7 +600,7 @@
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--primary);
+    color: $primary-color;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -615,9 +612,26 @@
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: tmpwhite;
 }
 
 .footer .copyright a:hover {
-    color: var(--primary);
+    color: $primary-color;
+}
+.btn-1{
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    background-color: $primary-color;
+    border: 2px solid transparent;
+    transition: all .3s ease-in-out !important;
+    &:hover{
+        text-decoration: none;
+        color: $primary-color;
+        background-color: #fff;
+        border-color: $primary-color;
+    }
 }
