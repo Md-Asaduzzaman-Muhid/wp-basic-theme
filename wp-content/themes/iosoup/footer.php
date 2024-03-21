@@ -1,90 +1,62 @@
-	<footer class="footer anima-container">
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 anima anima-left">
-						<div class="footer-logo mb-3">
-							<a href="<?php echo get_site_url() ?>"><img class="footer-logo img-fluid" src="<?php echo get_template_directory_uri() ?>/img/logo.png" alt="logo"></a>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+		<div class="container py-5">
+				<div class="row g-5">
+						<div class="col-lg-3 col-md-6">
+								<h4 class="text-light mb-4">Address</h4>
+								<p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+								<p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+								<p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+								<div class="d-flex pt-2">
+										<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+										<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+										<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+										<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+								</div>
 						</div>
-						<ul class="social-links m-0 p-0 text-center">
-							<li class="wow zoomIn">
-								<a href="<?php echo get_option('facebook') ?>" target="_blank">
-								<?php include(get_template_directory().'/img/icons/facebook-f.svg') ?></a>
-							</li>
-							<li class="wow zoomIn">
-								<a href="<?php echo get_option('facebook') ?>" target="_blank">
-								<?php include(get_template_directory().'/img/icons/instagram.svg') ?></a>
-							</li>
-							<li class="wow zoomIn">
-								<a href="<?php echo get_option('facebook') ?>" target="_blank">
-								<?php include(get_template_directory().'/img/icons/x-twitter.svg') ?></a>
-							</li>
-							<li class="wow zoomIn">
-								<a href="<?php echo get_option('facebook') ?>" target="_blank">
-								<?php include(get_template_directory().'/img/icons/tiktok.svg') ?></a>
-							</li>
-							<li class="wow zoomIn">
-								<a href="<?php echo get_option('facebook') ?>" target="_blank">
-								<?php include(get_template_directory().'/img/icons/youtube.svg') ?></a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 anima anima-left">
-						<h3 class="footer-title"><?php echo get_bloginfo('name') ?> </h3>
-						
-						<ul class="contact-links m-0 p-0">
-							<li class="wow zoomIn">
-								<?php include(get_template_directory().'/img/icons/phone-solid.svg') ?>
-								<a href="tel:<?php echo trim(get_option('phone'));?>"><?php echo get_option('phone'); ?></a>
-							</li>
-							<li class="wow zoomIn">
-								<?php include(get_template_directory().'/img/icons/envelope-regular.svg') ?>
-								<a href="mailto:<?php echo get_option('e-mail') ?>"><?php echo get_option('e-mail'); ?></a>
-							</li>
-							<li class="wow zoomIn">
-								<?php include(get_template_directory().'/img/icons/location-dot-solid.svg') ?>
-								<?php echo get_option('address_line1'); ?><?php echo get_option('address_line2'); ?>
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 anima anima-right">
-						<div class="menu-footer">
-							<?php 
-							$locations = get_nav_menu_locations();
-							$menu = wp_get_nav_menu_object( $locations['about'] ); ?>
-							<h3 class="footer-title"><?php echo $menu->name ?: 'Footer Menu' ?></h3>
-								<?php wp_nav_menu(
-									array(
-										'theme_location'  => 'top-menu',
-										'container_class' => 'collapse navbar-collapse',
-										'container_id'    => 'mainNavigation',
-										'menu_class'      => 'navbar-nav ms-auto'
-									)
-								); ?>
+						<div class="col-lg-3 col-md-6">
+								<h4 class="text-light mb-4">Services</h4>
+								<a class="btn btn-link" href="">General Carpentry</a>
+								<a class="btn btn-link" href="">Furniture Remodeling</a>
+								<a class="btn btn-link" href="">Wooden Floor</a>
+								<a class="btn btn-link" href="">Wooden Furniture</a>
+								<a class="btn btn-link" href="">Custom Carpentry</a>
 						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 anima anima-right">
-						<h3 class="footer-title">Office Hours</h3>
-						<h5>Poland Office</h5>
-						<p>Mon - Fri : 9 AM - 5:00 PM </p>
-						<h5>Dhaka Office</h5>
-						<p>Sun - Thus : 10 AM - 6:00 PM </p>
-					</div>
+						<div class="col-lg-3 col-md-6">
+								<h4 class="text-light mb-4">Quick Links</h4>
+								<a class="btn btn-link" href="">About Us</a>
+								<a class="btn btn-link" href="">Contact Us</a>
+								<a class="btn btn-link" href="">Our Services</a>
+								<a class="btn btn-link" href="">Terms & Condition</a>
+								<a class="btn btn-link" href="">Support</a>
+						</div>
+						<div class="col-lg-3 col-md-6">
+								<h4 class="text-light mb-4">Newsletter</h4>
+								<p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+								<div class="position-relative mx-auto" style="max-width: 400px;">
+										<input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+										<button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+								</div>
+						</div>
 				</div>
-			</div>
 		</div>
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="copyright text-center">
-					<p class="mb-0"><span>Copyright &copy; <?php echo get_bloginfo('name') ?>.</span> All Rights Reserved</p>
+		<div class="container">
+				<div class="copyright">
+						<div class="row">
+								<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+										&copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+								</div>
+								<div class="col-md-6 text-center text-md-end">
+										<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+										Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+								</div>
+						</div>
 				</div>
-			</div>
 		</div>
-		
-	</footer>
-	<div class="totop">
-		<?php include(get_template_directory().'/img/icons/chevron-up-solid.svg') ?>
-	</div>
+</div>
+<!-- Footer End -->
+
+
 	<?php wp_footer();?>
 </body>
 </html>
