@@ -3,6 +3,9 @@
 <head>
 	<?php $GA = array(); include('resources/php/header_basic.php') ?>
 	<?php wp_head();?>
+	<!-- Icon Font Stylesheet -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
 <header class="header">
@@ -33,7 +36,7 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<div id="topMenu" class="header-menu">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
@@ -58,5 +61,3 @@
 		</nav>
 	</div>
 </header>
-
-
