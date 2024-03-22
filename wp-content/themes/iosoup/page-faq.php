@@ -4,18 +4,21 @@
 Template Name: FAQ
 */
 get_header(); ?>
-<section class="title-section position-relative">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php if(get_field('inner_banner')):?>
-        <div class="inner-banner">
-            <img class="img-fluid" src="<?php echo get_field('inner_banner'); ?>" alt="banner">
+<!-- Page Header Start -->
+<section class="page-title-section">
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown"><?php single_post_title(); ?></h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="<?php echo home_url(); ?>" title="home page url">Home</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page" title="current page url"><?php single_post_title(); ?></li>
+                </ol>
+            </nav>
         </div>
-        <?php else: ?>
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/inner-banner.jpg" alt="banner">
-        <?php endif ?>
-        <h1 class="page-title"><?php echo get_the_title(); ?></h1>
-    <?php endwhile; endif; ?>
-</section>
+    </div>
+</section> 
+<!-- Page Header End -->
 
 <section class="page-section py-5">
 	<div class="container">

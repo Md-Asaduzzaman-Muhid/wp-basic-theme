@@ -1,7 +1,7 @@
 <?php 
  /**
  * Dimox Breadcrumbs
- * http://dimox.net/wordpress-breadcrumbs-without-a-plugin/
+ * https://dimox.net/wordpress-breadcrumbs-without-a-plugin/
  * Since ver 1.0
  * Add this to any template file by calling dimox_breadcrumbs()
  * Changes: MC added taxonomy support

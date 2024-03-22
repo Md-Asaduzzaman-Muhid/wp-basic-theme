@@ -37,34 +37,26 @@
           <div class="footer-widget">
             <h4>About Us</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
+              <li><a href="<?php echo home_url(); ?>/">Home</a></li>
+              <li><a href="<?php echo home_url(); ?>/about">About</a></li>
+              <li><a href="<?php echo home_url(); ?>/services">Services</a></li>
+              <li><a href="<?php echo home_url(); ?>/blogs">Blogs</a></li>
+              <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
             </ul>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
+          
           </div>
         </div>
         <div class="col-lg-3">
           <div class="footer-widget">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Free Apps</a></li>
-              <li><a href="#">App Engine</a></li>
-              <li><a href="#">Programming</a></li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">App News</a></li>
+              <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
+              <li><a href="<?php echo home_url(); ?>/career">Career</a></li>
+              <li><a href="<?php echo home_url(); ?>/get-a-quote">Get a Quote</a></li>
+              <li><a href="<?php echo home_url(); ?>/portfolio">Portfolio</a></li>
+              <li><a href="<?php echo home_url(); ?>/about">About Team</a></li>
             </ul>
-            <ul>
-              <li><a href="#">App Dev Team</a></li>
-              <li><a href="#">Digital Web</a></li>
-              <li><a href="#">Normal Apps</a></li>
-            </ul>
+      
           </div>
         </div>
         <div class="col-lg-3">

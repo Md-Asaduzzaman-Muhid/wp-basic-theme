@@ -137,8 +137,8 @@
           loop: true,
           nav : true,
           navText : [
-              '<i class="bi bi-chevron-left"></i>',
-              '<i class="bi bi-chevron-right"></i>'
+              '<i class="fas fa-backward"></i>',
+              '<i class="fas fa-forward"></i>'
           ]
       });
 
@@ -152,8 +152,8 @@
           loop: true,
           nav : true,
           navText : [
-              '<i class="bi bi-arrow-left"></i>',
-              '<i class="bi bi-arrow-right"></i>'
+              '<i class="fas fa-long-arrow-alt-left"></i>',
+              '<i class="fas fa-long-arrow-alt-right"></i>'
           ],
           responsive: {
               0:{
@@ -224,9 +224,9 @@ window.addEventListener("mousemove", (ev) => {
 // 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 // });
 //
-// let TopPlusOpen_Grey = L.tileLayer('http://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web_grau/default/WEBMERCATOR/{z}/{y}/{x}.png', {
+// let TopPlusOpen_Grey = L.tileLayer('https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web_grau/default/WEBMERCATOR/{z}/{y}/{x}.png', {
 // 	maxZoom: 20,
-// 	attribution: 'Map data: &copy; <a href="http://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a>'
+// 	attribution: 'Map data: &copy; <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a>'
 // });
 // var CartoDB_Voyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
 // 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',

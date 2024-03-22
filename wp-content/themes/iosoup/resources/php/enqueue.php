@@ -150,7 +150,7 @@ function my_login_logo() {
 }
 add_action('login_enqueue_scripts', 'my_login_logo');
 function my_addition_to_login_footer() {
-    echo '<div class="iplus_logo"><a href="https://www.iplus.com.pl/" target="_blank"><div>Internet Plus Częstochowa</div><img src="https://www.iplus.com.pl/wp-content/uploads/2013/05/logo_internet_plus.jpg" >'
+    echo '<div class="iplus_logo"><a href="https://www.iosoup.com/" target="_blank"><div>ioSoup Digital Agency</div><img src="https://iosoup.com/wp-content/themes/ipsoup/img/logo.png" >'
     . '</a></div>';
 }
 add_action('login_footer', 'my_addition_to_login_footer');

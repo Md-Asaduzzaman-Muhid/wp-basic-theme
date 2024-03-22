@@ -241,7 +241,7 @@ a{
 }
 
 .page-header {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url('./img/inner-banner.webp') center center no-repeat;
     background-size: cover;
 }
 
@@ -251,35 +251,36 @@ a{
 
 
 /*** Section Title ***/
-.section-title h1 {
+.section-title h2 {
     position: relative;
     display: inline-block;
     padding: 0 60px;
 }
 
-.section-title.text-start h1 {
+.section-title.text-start h2 {
     padding-left: 0;
 }
 
-.section-title h1::before,
-.section-title h1::after {
+.section-title h2::before,
+.section-title h2::after {
     position: absolute;
     content: "";
     width: 45px;
     height: 5px;
-    bottom: 0;
-    background: $tmpblack;
+    top: 60%;
+    transform: translateY(-50%);
+    background: $primary-color;
 }
 
-.section-title h1::before {
+.section-title h2::before {
     left: 0;
 }
 
-.section-title h1::after {
+.section-title h2::after {
     right: 0;
 }
 
-.section-title.text-start h1::before {
+.section-title.text-start h2::before {
     display: none;
 }
 
@@ -426,7 +427,6 @@ a{
 .team-item:hover img {
     transform: scale(1.1);
 }
-
 .team-item .team-social {
     position: absolute;
     width: 38px;
@@ -531,7 +531,10 @@ a{
 .testimonial-carousel .owl-nav .owl-next:hover {
     color: $tmpblack;
 }
-
+.testimonial-item img{
+    max-height: 90px;
+    max-width: 90px;
+}
 
 /*** Contact ***/
 @media (min-width: 992px) {
