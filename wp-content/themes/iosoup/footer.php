@@ -7,20 +7,7 @@
           </div>
         </div>
         <div class="col-lg-6 offset-lg-3">
-          <form id="search" action="#" method="GET">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="d4cfb11" title="Subscribe"]'); ?>
         </div>
       </div>
       <div class="row">
@@ -29,19 +16,19 @@
             <h4>Contact Us</h4>
             <p><?php echo get_option('address_line1'); ?></p>
 			<p><?php echo get_option('address_line2'); ?></p>
-            <p><a href="mailto:<?php echo get_option('e-mail') ?>"><?php echo get_option('e-mail'); ?></a></p>
-            <p><a href="tel:<?php echo get_option('phone') ?>"><?php echo get_option('phone'); ?></a></p>
+            <p><a href="mailto:<?php echo get_option('e-mail') ?>" title="email"><?php echo get_option('e-mail'); ?></a></p>
+            <p><a href="tel:<?php echo get_option('phone') ?>" title="telephone"><?php echo get_option('phone'); ?></a></p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="footer-widget">
             <h4>About Us</h4>
             <ul>
-              <li><a href="<?php echo home_url(); ?>/">Home</a></li>
-              <li><a href="<?php echo home_url(); ?>/about">About</a></li>
-              <li><a href="<?php echo home_url(); ?>/services">Services</a></li>
-              <li><a href="<?php echo home_url(); ?>/blogs">Blogs</a></li>
-              <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
+              <li><a href="<?php echo home_url(); ?>/" title="home">Home</a></li>
+              <li><a href="<?php echo home_url(); ?>/about" title="about link">About</a></li>
+              <li><a href="<?php echo home_url(); ?>/services" title="services link">Services</a></li>
+              <li><a href="<?php echo home_url(); ?>/blogs" title="blogs link">Blogs</a></li>
+              <li><a href="<?php echo home_url(); ?>/contact" title="contact link">Contact</a></li>
             </ul>
           
           </div>
@@ -50,11 +37,11 @@
           <div class="footer-widget">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
-              <li><a href="<?php echo home_url(); ?>/career">Career</a></li>
-              <li><a href="<?php echo home_url(); ?>/get-a-quote">Get a Quote</a></li>
-              <li><a href="<?php echo home_url(); ?>/portfolio">Portfolio</a></li>
-              <li><a href="<?php echo home_url(); ?>/about">About Team</a></li>
+              <li><a href="<?php echo home_url(); ?>/contact" title="contact link">Contact</a></li>
+              <li><a href="<?php echo home_url(); ?>/career" title="career link">Career</a></li>
+              <li><a href="<?php echo home_url(); ?>/get-a-quote" title="quote link">Get a Quote</a></li>
+              <li><a href="<?php echo home_url(); ?>/portfolio" title="portfolio link">Portfolio</a></li>
+              <li><a href="<?php echo home_url(); ?>/about" title="about us link">About Team</a></li>
             </ul>
       
           </div>

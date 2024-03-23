@@ -56,6 +56,7 @@
 
     function add_link_atts($atts) {
         $atts['class'] = "nav-link";
+        $atts['title'] = "menu item link";
         return $atts;
     }
     add_filter( 'nav_menu_link_attributes', 'add_link_atts');
@@ -181,6 +182,6 @@
 
 
     // Disable Gutenberg
-    add_filter('use_block_editor_for_post', '__return_false');
+    // add_filter('use_block_editor_for_post', '__return_false');
 
 ?>

@@ -124,7 +124,10 @@ a{
     top: -100px;
     transition: .5s;
 }
-
+.sticky-top.shadow-sm {
+    position: fixed;
+    width: 100%;
+}
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;

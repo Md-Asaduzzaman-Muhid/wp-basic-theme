@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php the_post(); ?>
+
 
 <div class="col-12 text-center">
 	<h1>Oops!</h1>

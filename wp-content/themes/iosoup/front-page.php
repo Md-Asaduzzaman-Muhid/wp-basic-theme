@@ -17,8 +17,8 @@ get_header(); ?>
 														<h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To ioSoup</h5>
 														<h1 class="display-3 text-white animated slideInDown mb-4">We Create Innovative Tools to Empower Businesses</h1>
 														<p class="fs-5 fw-medium text-white mb-4 pb-2">Our battle-tested developers specialize in a wide range of web development services. Here are some of the solutions that we can deliver for you.</p>
-														<a href="<?php echo home_url(); ?>/services" class="btn btn-1 py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-														<a href="<?php echo home_url(); ?>/get-a-quote" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+														<a href="<?php echo home_url(); ?>/services" class="btn btn-1 py-md-3 px-md-5 me-3 animated slideInLeft" title="services button">Read More</a>
+														<a href="<?php echo home_url(); ?>/get-a-quote" class="btn btn-light py-md-3 px-md-5 animated slideInRight" title="quote button">Free Quote</a>
 												</div>
 										</div>
 								</div>
@@ -33,8 +33,8 @@ get_header(); ?>
 														<h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To ioSoup</h5>
 														<h1 class="display-3 text-white animated slideInDown mb-4">Hire the right digital marketing company</h1>
 														<p class="fs-5 fw-medium text-white mb-4 pb-2">Solve customer problems by choosing cutting-edge technologies for your tech stack. Take your business to the next level.</p>
-														<a href="<?php echo home_url(); ?>/services" class="btn btn-1 py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-														<a href="<?php echo home_url(); ?>/get-a-quote" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+														<a href="<?php echo home_url(); ?>/services" class="btn btn-1 py-md-3 px-md-5 me-3 animated slideInLeft" title="services button">Read More</a>
+														<a href="<?php echo home_url(); ?>/get-a-quote" class="btn btn-light py-md-3 px-md-5 animated slideInRight" title="quote button">Free Quote</a>
 												</div>
 										</div>
 								</div>
@@ -49,8 +49,8 @@ get_header(); ?>
 														<h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To ioSoup</h5>
 														<h1 class="display-3 text-white animated slideInDown mb-4">Achieve your business goals with us</h1>
 														<p class="fs-5 fw-medium text-white mb-4 pb-2">Take advantage of our proven web development process and make your project a success</p>
-														<a href="<?php echo home_url(); ?>/services" class="btn btn-1 py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-														<a href="<?php echo home_url(); ?>/get-a-quote" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+														<a href="<?php echo home_url(); ?>/services" class="btn btn-1 py-md-3 px-md-5 me-3 animated slideInLeft" title="services button">Read More</a>
+														<a href="<?php echo home_url(); ?>/get-a-quote" class="btn btn-light py-md-3 px-md-5 animated slideInRight" title="quote button">Free Quote</a>
 												</div>
 										</div>
 								</div>
@@ -114,7 +114,7 @@ get_header(); ?>
 				<div class="row g-0 mx-lg-0">
 						<div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
 								<div class="position-relative h-100">
-										<img class="position-absolute img-fluid w-100 h-100" src="<?php echo  get_template_directory_uri() ?>/img/about.jpg" style="object-fit: cover;" alt="">
+										<img class="position-absolute img-fluid w-100 h-100" src="<?php echo  get_template_directory_uri() ?>/img/about.jpg" style="object-fit: cover;" alt="about iosoup" title="about iosoup">
 								</div>
 						</div>
 						<div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -429,7 +429,7 @@ get_header(); ?>
 				<div class="row g-0 mx-lg-0">
 						<div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
 								<div class="position-relative h-100">
-										<img class="position-absolute img-fluid w-100 h-100" src="<?php echo  get_template_directory_uri() ?>/img/quote.jpg" style="object-fit: cover;" alt="">
+										<img class="position-absolute img-fluid w-100 h-100" src="<?php echo  get_template_directory_uri() ?>/img/quote.jpg" style="object-fit: cover;" alt="quote your project" title="quote your project">
 								</div>
 						</div>
 						<div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -458,7 +458,7 @@ get_header(); ?>
 				</div>
 				<div class="owl-carousel testimonial-carousel">
 						<div class="testimonial-item text-center">
-								<img class="img-fluid bg-light p-2 mx-auto mb-3" src="<?php echo  get_template_directory_uri() ?>/img/testimonial-1.jpg" title="testimonial image">
+								<img class="img-fluid bg-light p-2 mx-auto mb-3" src="<?php echo  get_template_directory_uri() ?>/img/testimonial-1.jpg" alt="testimonial image" title="testimonial image">
 								<div class="testimonial-text text-center p-4">
 										<p>iOSoup is the master of web development - they serve a website that's so deliciously functional. From the first consultation to the final launch, their team sprinkled our project with creativity and innovation.</p>
 										<h5 class="mb-1">Khairul Hasan</h5>
@@ -466,7 +466,7 @@ get_header(); ?>
 								</div>
 						</div>
 						<div class="testimonial-item text-center">
-								<img class="img-fluid bg-light p-2 mx-auto mb-3" src="<?php echo  get_template_directory_uri() ?>/img/testimonial-2.jpg" title="testimonial image">
+								<img class="img-fluid bg-light p-2 mx-auto mb-3" src="<?php echo  get_template_directory_uri() ?>/img/testimonial-2.jpg" alt="testimonial image" title="testimonial image">
 								<div class="testimonial-text text-center p-4">
 										<p>From the moment I entrusted them with my website's optimization, they worked their enchantment, weaving keywords and strategies into the very fabric of my online presence. Thanks to iOSoup's expert touch.</p>
 										<h5 class="mb-1">A R Kabir</h5>
@@ -474,7 +474,7 @@ get_header(); ?>
 								</div>
 						</div>
 						<div class="testimonial-item text-center">
-								<img class="img-fluid bg-light p-2 mx-auto mb-3" src="<?php echo  get_template_directory_uri() ?>/img/testimonial-3.jpg" title="testimonial image">
+								<img class="img-fluid bg-light p-2 mx-auto mb-3" src="<?php echo  get_template_directory_uri() ?>/img/testimonial-3.jpg" alt="testimonial image" title="testimonial image">
 								<div class="testimonial-text text-center p-4">
 										<p>iOSoup sculpted a website that not only looks beautiful but also functions across every device. If you're in search of a web design partner that combines talent, passion, and professionalism at iOSoup.</p>
 										<h5 class="mb-1">Michal Powroznik</h5>

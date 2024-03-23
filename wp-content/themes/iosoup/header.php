@@ -32,12 +32,12 @@
 					<div class="col-lg-5 px-5 text-end">
 							<div class="h-100 d-inline-flex align-items-center py-3 me-4">
 									<small class="fa fa-envelope text-primary me-2"></small>
-									<small><a href="mailto:<?php echo get_option('e-mail') ?>"><?php echo get_option('e-mail'); ?></a></small>
+									<small><a href="mailto:<?php echo get_option('e-mail') ?>" title="email Link"><?php echo get_option('e-mail'); ?></a></small>
 							</div>
 							<div class="h-100 d-inline-flex align-items-center">
-									<a class="btn btn-sm-square bg-white text-primary me-1" href="<?php echo get_option('facebook') ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
-									<a class="btn btn-sm-square bg-white text-primary me-1" href="<?php echo get_option('twitter-x') ?>" target="_blank"><i class="fab fa-twitter"></i></a>
-									<a class="btn btn-sm-square bg-white text-primary me-0" href="<?php echo get_option('instagram') ?>" target="_blank"><i class="fab fa-instagram"></i></a>
+									<a class="btn btn-sm-square bg-white text-primary me-1" href="<?php echo get_option('facebook') ?>" target="_blank" title="facebook link"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-sm-square bg-white text-primary me-1" href="<?php echo get_option('twitter-x') ?>" target="_blank" tile="twitter x link"><i class="fab fa-twitter"></i></a>
+									<a class="btn btn-sm-square bg-white text-primary me-0" href="<?php echo get_option('instagram') ?>" target="_blank" title="instagram link"><i class="fab fa-instagram"></i></a>
 							</div>
 					</div>
 			</div>
@@ -55,14 +55,14 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 					<?php wp_nav_menu(
-												array(
-													'theme_location'  => 'top-menu',
-													'container_class' => 'collapse navbar-collapse',
-													'container_id'    => 'mainNavigation',
-													'menu_class'      => 'navbar-nav ms-auto'
-												)
-											); ?>
-					<a href="<?php echo home_url(); ?>/get-a-quote" class="btn btn-1 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+						array(
+							'theme_location'  => 'top-menu',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'mainNavigation',
+							'menu_class'      => 'navbar-nav ms-auto'
+						)
+					); ?>
+					<a href="<?php echo home_url(); ?>/get-a-quote" class="btn btn-1 py-4 px-lg-5 d-none d-lg-block" title="get quote button">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
 			</div>
 	</nav>
 	<!-- Navbar End -->

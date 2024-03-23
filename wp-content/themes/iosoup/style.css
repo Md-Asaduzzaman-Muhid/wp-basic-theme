@@ -238,6 +238,10 @@ a {
   top: -100px;
   transition: .5s; }
 
+.sticky-top.shadow-sm {
+  position: fixed;
+  width: 100%; }
+
 @media (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: block;
@@ -662,9 +666,6 @@ footer .section-heading h4 {
   margin-right: 13%;
   text-align: center; }
 
-footer #search {
-  margin-bottom: 80px; }
-
 footer #search input::placeholder {
   color: #fff; }
 
@@ -882,5 +883,18 @@ footer p a:hover {
   width: 200px;
   height: 200px;
   border-radius: 50%; }
+
+.contact-information .item {
+  text-align: center;
+  background: #7620C1;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 20px; }
+  .contact-information .item:not(:last-child) {
+    margin-bottom: 20px; }
+  .contact-information .item i {
+    font-size: 50px; }
+  .contact-information .item a {
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
